@@ -1,0 +1,26 @@
+{
+  "name": "@chris-antonio/dfts-react",
+  "version": "0.1.0",
+  "description": "DFTS design system: React components, design tokens and styles",
+  "type": "module",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": { "types": "./lib/index.d.ts", "import": "./lib/index.js" },
+    "./styles.css": "./lib/styles.css",
+    "./tokens.css": "./styles/tokens.css",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": ["*.css"],
+  "files": ["lib", "styles", "DFTS.md", "DFTS-tokens.md"],
+  "scripts": {
+    "build": "node scripts/build-package.mjs",
+    "prepare": "npm run build",
+    "test": "node scripts/smoke-test.mjs"
+  },
+  "peerDependencies": { "react": ">=18", "react-dom": ">=18" },
+  "devDependencies": { "esbuild": "^0.24.0", "react": "^18.3.1", "react-dom": "^18.3.1" },
+  "repository": { "type": "git", "url": "git+https://github.com/chris-antonio/dfts-react.git" },
+  "publishConfig": { "access": "public" }
+}

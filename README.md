@@ -11,6 +11,38 @@ server required. It needs internet access once, to load the Material Symbols
 icon font and Inter typeface from Google Fonts — everything else (React, all
 components) is bundled locally and works offline.
 
+## Use as an npm package
+
+```bash
+npm install @chris-antonio/dfts-react react react-dom
+# or straight from GitHub, no npm account needed:
+npm install github:chris-antonio/dfts-react react react-dom
+```
+
+```jsx
+import "@chris-antonio/dfts-react/styles.css"; // tokens + base + all component styles, once at the app root
+import { Button, Alert, Table } from "@chris-antonio/dfts-react";
+```
+
+Dark mode: set `data-theme="dark"` on `<html>`. Load the Inter and Material Symbols fonts
+(see `index.html`) in your app.
+
+### How the package is built
+
+`src/components/*.jsx` stays the source of truth and keeps the no-build demo working.
+`npm run build` (also run automatically on install from GitHub) generates `lib/`: it adds the
+`react` import, the imports between components and the exports, compiles JSX and bundles the CSS.
+`npm test` renders every export to catch broken imports.
+
+### Publishing a release
+
+1. Bump `version` in `package.json` (semver: breaking change = major) and commit.
+2. `npm login`, then `npm publish --access public`, or create a GitHub Release tagged `vX.Y.Z`
+   and let `.github/workflows/publish.yml` publish (needs an `NPM_TOKEN` repo secret).
+3. Tag every version on GitHub: design system health tools read releases to track adoption and outdated usage.
+
+If you publish under another name, change `name` in `package.json`. The npm scope must match your npm username or organisation.
+
 ## What's in the box
 
 ```
