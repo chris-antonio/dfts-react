@@ -1,0 +1,25 @@
+.dfts-input-field { display: flex; flex-direction: column; gap: var(--Input-Fields-label-gap); font-family: var(--font-family-secondary); width: 100%; }
+.dfts-input-field__label { font-size: var(--font-size-13); font-weight: var(--font-weight-medium); color: var(--Input-Fields-label-color); }
+.dfts-input-field__control-wrap {
+  display: flex; align-items: center; gap: var(--Input-Fields-md-gap);
+  border-style: solid; border-width: var(--Input-Fields-md-border-width); border-color: var(--Input-Fields-default-border);
+  background: var(--Input-Fields-default-background); border-radius: var(--Input-Fields-md-border-radius);
+  transition: border-color var(--duration-150) var(--easing-ease-out);
+}
+.dfts-input-field--sm { height: var(--Input-Fields-sm-height); padding: 0 var(--Input-Fields-sm-padding-horizontal); border-radius: var(--Input-Fields-sm-border-radius); }
+.dfts-input-field--md { height: var(--Input-Fields-md-height); padding: 0 var(--Input-Fields-md-padding-horizontal); }
+.dfts-input-field--lg { height: var(--Input-Fields-lg-height); padding: 0 var(--Input-Fields-lg-padding-horizontal); border-radius: var(--Input-Fields-lg-border-radius); }
+.dfts-input-field__control-wrap:hover { border-color: var(--Input-Fields-hover-border); }
+.dfts-input-field__control-wrap:focus-within { border-color: var(--Input-Fields-focused-border); border-width: var(--Input-Fields-focused-border-width); box-shadow: var(--focus-ring); }
+.dfts-input-field--error { border-color: var(--Input-Fields-error-border); }
+.dfts-input-field--disabled { background: var(--Input-Fields-disabled-background); }
+.dfts-input-field__icon { color: var(--Input-Fields-label-color); flex-shrink: 0; }
+.dfts-input-field__control {
+  flex: 1; border: none; background: transparent; outline: none; min-width: 0;
+  font-size: var(--font-size-14); color: var(--Input-Fields-default-content); font-family: inherit;
+}
+.dfts-input-field__control::placeholder { color: var(--Input-Fields-default-placeholder); }
+.dfts-input-field__control:disabled { color: var(--Input-Fields-disabled-content); cursor: not-allowed; }
+.dfts-input-field__helper, .dfts-input-field__helper--error { font-size: var(--font-size-12); }
+.dfts-input-field__helper { color: var(--Input-Fields-helper-color); }
+.dfts-input-field__helper--error { color: var(--Input-Fields-helper-error); }

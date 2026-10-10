@@ -1,0 +1,22 @@
+.dfts-date-picker {
+  width: 280px; padding: var(--Date-Picker-padding); border-radius: var(--Date-Picker-border-radius);
+  background: var(--Date-Picker-background); border: var(--Date-Picker-border-width) solid var(--Date-Picker-border);
+  font-family: var(--font-family-secondary);
+}
+.dfts-date-picker__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--spacing-sm); }
+.dfts-date-picker__label { font-size: var(--font-size-14); font-weight: var(--font-weight-semibold); color: var(--Date-Picker-header-content); }
+.dfts-date-picker__nav { border: none; background: transparent; cursor: pointer; color: var(--Date-Picker-nav-content); display: inline-flex; padding: 4px; border-radius: var(--radius-sm); }
+.dfts-date-picker__nav:hover { background: var(--Date-Picker-day-hover-background); }
+.dfts-date-picker__nav:focus-visible { box-shadow: var(--focus-ring); }
+.dfts-date-picker__weekdays, .dfts-date-picker__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.dfts-date-picker__weekdays span { text-align: center; font-size: var(--font-size-11); color: var(--Date-Picker-weekday-content); padding-bottom: 4px; }
+.dfts-date-picker__cell {
+  width: var(--Date-Picker-cell-size); height: var(--Date-Picker-cell-size); border-radius: var(--Date-Picker-cell-radius);
+  border: none; background: transparent; cursor: pointer; font-size: var(--font-size-12); color: var(--Date-Picker-day-default-content);
+  font-family: inherit; justify-self: center;
+}
+.dfts-date-picker__cell--empty { cursor: default; }
+.dfts-date-picker__cell:hover:not(.dfts-date-picker__cell--empty):not(.dfts-date-picker__cell--selected) { background: var(--Date-Picker-day-hover-background); }
+.dfts-date-picker__cell:focus-visible { box-shadow: var(--focus-ring); }
+.dfts-date-picker__cell--today { background: var(--Date-Picker-day-today-background); color: var(--Date-Picker-day-today-content); font-weight: var(--font-weight-semibold); }
+.dfts-date-picker__cell--selected { background: var(--Date-Picker-day-selected-background); color: var(--Date-Picker-day-selected-content); font-weight: var(--font-weight-semibold); }

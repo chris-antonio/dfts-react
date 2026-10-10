@@ -1,0 +1,12 @@
+.dfts-link {
+  display: inline-flex; align-items: center; text-decoration: underline; text-underline-offset: 2px;
+  color: var(--Link-default-content); font-family: var(--font-family-secondary); cursor: pointer;
+  border-radius: var(--radius-xs);
+}
+.dfts-link--sm { gap: var(--Link-sm-gap); font-size: var(--font-size-13); }
+.dfts-link--md { gap: var(--Link-md-gap); font-size: var(--font-size-14); }
+.dfts-link--lg { gap: var(--Link-lg-gap); font-size: var(--font-size-16); }
+.dfts-link:hover:not(.dfts-link--disabled) { color: var(--Link-hover-content); }
+.dfts-link:focus-visible { box-shadow: var(--focus-ring); }
+.dfts-link--error { color: var(--Link-error-content); }
+.dfts-link--disabled { color: var(--Link-disabled-content); cursor: not-allowed; text-decoration: none; pointer-events: none; }

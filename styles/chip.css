@@ -1,0 +1,26 @@
+.dfts-chip {
+  display: inline-flex; align-items: center; border-style: solid; font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-medium); cursor: default; border-color: transparent;
+  transition: background-color var(--duration-150) var(--easing-ease-out);
+}
+.dfts-chip--sm { padding: var(--Chip-sm-padding-vertical) var(--Chip-sm-padding-horizontal); gap: var(--Chip-sm-gap); border-radius: var(--Chip-sm-border-radius); border-width: var(--Chip-sm-border-width); font-size: var(--font-size-11); }
+.dfts-chip--md { padding: var(--Chip-md-padding-vertical) var(--Chip-md-padding-horizontal); gap: var(--Chip-md-gap); border-radius: var(--Chip-md-border-radius); border-width: var(--Chip-md-border-width); font-size: var(--font-size-12); }
+.dfts-chip--lg { padding: var(--Chip-lg-padding-vertical) var(--Chip-lg-padding-horizontal); gap: var(--Chip-lg-gap); border-radius: var(--Chip-lg-border-radius); border-width: var(--Chip-lg-border-width); font-size: var(--font-size-14); }
+
+button.dfts-chip { cursor: pointer; }
+button.dfts-chip:focus-visible { box-shadow: var(--focus-ring); }
+
+.dfts-chip--filled, .dfts-chip--selected { background: var(--Chip-filled-default-background); color: var(--Chip-filled-default-content); }
+button.dfts-chip--filled:hover:not(:disabled) { background: var(--Chip-filled-hover-background); color: var(--Chip-filled-hover-content); }
+button.dfts-chip--filled:active:not(:disabled) { background: var(--Chip-filled-pressed-background); color: var(--Chip-filled-pressed-content); }
+
+.dfts-chip--outlined { background: var(--Chip-outlined-default-background); border-color: var(--Chip-outlined-default-border); color: var(--Chip-outlined-default-content); }
+button.dfts-chip--outlined:hover:not(:disabled) { background: var(--Chip-outlined-hover-background); color: var(--Chip-outlined-hover-content); border-color: var(--Chip-outlined-hover-border); }
+button.dfts-chip--outlined:active:not(:disabled) { background: var(--Chip-outlined-pressed-background); border-color: var(--Chip-outlined-pressed-border); color: var(--Chip-outlined-pressed-content); }
+
+.dfts-chip--error { background: var(--Chip-error-background); border-color: var(--Chip-error-border); color: var(--Chip-error-content); }
+
+.dfts-chip:disabled { background: var(--Chip-disabled-background); color: var(--Chip-disabled-content); cursor: not-allowed; border-color: transparent; }
+
+.dfts-chip__dismiss { display: inline-flex; border: none; background: transparent; padding: 0; cursor: pointer; color: inherit; }
+.dfts-chip__dismiss:focus-visible { box-shadow: var(--focus-ring); border-radius: var(--radius-full); }

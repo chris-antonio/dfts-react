@@ -1,0 +1,463 @@
+/* ==========================================================================
+   DFTS — Design Tokens (CSS Custom Properties)
+   Generated from DFTS-tokens.md. Do not hand-edit values — regenerate from
+   the source-of-truth token export instead.
+   ========================================================================== */
+
+:root {
+  /* ---- 1. Colour Primitives ------------------------------------------- */
+  /* Neutral */
+  --neutral-50:#f2f2f2; --neutral-100:#e5e5e5; --neutral-200:#cccccc; --neutral-300:#b2b2b2;
+  --neutral-400:#999999; --neutral-500:#808080; --neutral-600:#666666; --neutral-700:#4d4d4d;
+  --neutral-800:#333333; --neutral-900:#1a1a1a;
+  /* Brand */
+  --brand-50:#e8e8fc; --brand-100:#d1d1fa; --brand-200:#9999ff; --brand-300:#6666ff;
+  --brand-400:#3333ff; --brand-500:#0000ff; --brand-600:#0000cc; --brand-700:#000099;
+  --brand-800:#000066; --brand-900:#000033;
+  /* Alpha - Dark */
+  --alpha-dark-50:#0000000a; --alpha-dark-100:#00000014; --alpha-dark-200:#0000001f; --alpha-dark-300:#00000029;
+  --alpha-dark-400:#0000003d; --alpha-dark-500:#00000052; --alpha-dark-600:#0000007a; --alpha-dark-700:#000000a3;
+  --alpha-dark-800:#000000cc; --alpha-dark-900:#000000f5; --alpha-dark-1000:#000000;
+  /* Alpha - Light */
+  --alpha-light-50:#ffffff0a; --alpha-light-100:#ffffff14; --alpha-light-200:#ffffff1f; --alpha-light-300:#ffffff29;
+  --alpha-light-400:#ffffff3d; --alpha-light-500:#ffffff52; --alpha-light-600:#ffffff7a; --alpha-light-700:#ffffffa3;
+  --alpha-light-800:#ffffffcc; --alpha-light-900:#fffffff5; --alpha-light-1000:#ffffff;
+  /* Feedback - Info */
+  --feedback-info-50:#e7f2fe; --feedback-info-100:#cfe5fc; --feedback-info-200:#9eccfa; --feedback-info-300:#6eb2f7;
+  --feedback-info-400:#3d99f5; --feedback-info-500:#0d80f2; --feedback-info-600:#0a66c2; --feedback-info-700:#084d91;
+  --feedback-info-800:#053361; --feedback-info-900:#031a30;
+  /* Feedback - Success */
+  --feedback-success-50:#e9fbf0; --feedback-success-100:#d3f8e1; --feedback-success-200:#a7f1c2; --feedback-success-300:#7beaa4;
+  --feedback-success-400:#50e285; --feedback-success-500:#24db67; --feedback-success-600:#1daf52; --feedback-success-700:#15843e;
+  --feedback-success-800:#0e5829; --feedback-success-900:#072c15;
+  /* Feedback - Warning */
+  --feedback-warning-50:#fef5e6; --feedback-warning-100:#feeccd; --feedback-warning-200:#fcd99c; --feedback-warning-300:#fbc66a;
+  --feedback-warning-400:#fab338; --feedback-warning-500:#f9a006; --feedback-warning-600:#c78005; --feedback-warning-700:#956004;
+  --feedback-warning-800:#634003; --feedback-warning-900:#322001;
+  /* Feedback - Error */
+  --feedback-error-50:#fde9e7; --feedback-error-100:#fbd2d0; --feedback-error-200:#f8a6a0; --feedback-error-300:#f47971;
+  --feedback-error-400:#f14d41; --feedback-error-500:#ed2012; --feedback-error-600:#be1a0e; --feedback-error-700:#8e130b;
+  --feedback-error-800:#5f0d07; --feedback-error-900:#2f0604;
+
+  /* ---- 2. Semantic Colour Tokens (light) -------------------------------- */
+  --surface-neutral-default:#f2f2f2; --surface-neutral-subtle:#e5e5e5; --surface-neutral-strong:#cccccc; --surface-neutral-on:#1a1a1a;
+  --surface-brand-default:#0000ff; --surface-brand-subtle:#e8e8fc; --surface-brand-strong:#0000cc; --surface-brand-on:#f2f2f2;
+  --surface-info-default:#0d80f2; --surface-info-subtle:#e7f2fe; --surface-info-strong:#0a66c2; --surface-info-on:#f2f2f2;
+  --surface-success-default:#24db67; --surface-success-subtle:#e9fbf0; --surface-success-strong:#1daf52; --surface-success-on:#f2f2f2;
+  --surface-warning-default:#f9a006; --surface-warning-subtle:#fef5e6; --surface-warning-strong:#c78005; --surface-warning-on:#1a1a1a;
+  --surface-error-default:#ed2012; --surface-error-subtle:#fde9e7; --surface-error-strong:#be1a0e; --surface-error-on:#f2f2f2;
+  --content-neutral-default:#1a1a1a; --content-neutral-subtle:#666666; --content-neutral-strong:#4d4d4d; --content-neutral-on:#f2f2f2;
+  --content-brand-default:#0000cc; --content-brand-subtle:#3333ff; --content-brand-strong:#000099; --content-brand-on:#f2f2f2;
+  --content-info-default:#0a66c2; --content-info-subtle:#3d99f5; --content-info-strong:#084d91; --content-info-on:#f2f2f2;
+  --content-success-default:#1daf52; --content-success-subtle:#50e285; --content-success-strong:#15843e; --content-success-on:#f2f2f2;
+  --content-warning-default:#c78005; --content-warning-subtle:#fab338; --content-warning-strong:#956004; --content-warning-on:#1a1a1a;
+  --content-error-default:#be1a0e; --content-error-subtle:#f14d41; --content-error-strong:#8e130b; --content-error-on:#f2f2f2;
+  --border-neutral-default:#b2b2b2; --border-neutral-subtle:#cccccc; --border-neutral-strong:#808080; --border-neutral-on:#1a1a1a;
+  --border-brand-default:#0000ff; --border-brand-subtle:#9999ff; --border-brand-strong:#000099; --border-brand-on:#f2f2f2;
+  --border-info-default:#0d80f2; --border-info-subtle:#9eccfa; --border-info-strong:#084d91; --border-info-on:#f2f2f2;
+  --border-success-default:#24db67; --border-success-subtle:#a7f1c2; --border-success-strong:#15843e; --border-success-on:#f2f2f2;
+  --border-warning-default:#f9a006; --border-warning-subtle:#fcd99c; --border-warning-strong:#956004; --border-warning-on:#1a1a1a;
+  --border-error-default:#ed2012; --border-error-subtle:#f8a6a0; --border-error-strong:#8e130b; --border-error-on:#f2f2f2;
+
+  /* ---- 3. Spacing -------------------------------------------------------- */
+  --spacing-none:0px; --spacing-3xs:2px; --spacing-2xs:4px; --spacing-xs:8px; --spacing-sm:12px;
+  --spacing-md:16px; --spacing-lg:24px; --spacing-xl:32px; --spacing-2xl:40px; --spacing-3xl:48px;
+  --spacing-4xl:64px; --spacing-5xl:80px; --spacing-6xl:96px; --spacing-7xl:112px; --spacing-8xl:128px;
+
+  /* ---- 4. Border Radius --------------------------------------------------- */
+  --radius-none:0px; --radius-xs:2px; --radius-sm:4px; --radius-md:8px; --radius-lg:12px;
+  --radius-xl:16px; --radius-2xl:24px; --radius-3xl:32px; --radius-4xl:40px; --radius-5xl:48px;
+  --radius-6xl:64px; --radius-7xl:80px; --radius-8xl:128px; --radius-full:9999px;
+
+  /* ---- 5. Border Width ----------------------------------------------------- */
+  --border-width-none:0px; --border-width-thin:1px; --border-width-medium:2px; --border-width-thick:4px;
+
+  /* ---- 6. Typography -------------------------------------------------------- */
+  --font-family-primary:"Gill Sans", Arial, sans-serif;
+  --font-family-secondary:"Inter", Arial, sans-serif;
+  --font-weight-light:300; --font-weight-regular:400; --font-weight-medium:500;
+  --font-weight-semibold:600; --font-weight-bold:700; --font-weight-black:900;
+  --font-size-10:10px; --font-size-11:11px; --font-size-12:12px; --font-size-13:13px; --font-size-14:14px;
+  --font-size-15:15px; --font-size-16:16px; --font-size-18:18px; --font-size-20:20px; --font-size-22:22px;
+  --font-size-24:24px; --font-size-28:28px; --font-size-32:32px; --font-size-36:36px; --font-size-40:40px;
+  --font-size-48:48px; --font-size-56:56px; --font-size-64:64px; --font-size-72:72px; --font-size-80:80px; --font-size-92:92px;
+  --line-height-10:14px; --line-height-11:16px; --line-height-12:16px; --line-height-13:18px; --line-height-14:20px;
+  --line-height-15:22px; --line-height-16:24px; --line-height-18:26px; --line-height-20:28px; --line-height-22:32px;
+  --line-height-24:32px; --line-height-28:36px; --line-height-32:40px; --line-height-36:44px; --line-height-40:48px;
+  --line-height-48:56px; --line-height-56:64px; --line-height-64:72px; --line-height-72:80px; --line-height-80:96px; --line-height-92:108px;
+  --letter-spacing-0:0px; --letter-spacing-neg-0_5:-0.5px; --letter-spacing-neg-1:-1px;
+  --letter-spacing-neg-1_5:-1.5px; --letter-spacing-neg-2:-2px; --letter-spacing-neg-4:-4px;
+
+  /* ---- 7. Text Styles (composite, used via utility classes in demo.css) --- */
+  --text-display-lg-family:var(--font-family-primary); --text-display-lg-size:64px; --text-display-lg-line:72px; --text-display-lg-weight:700; --text-display-lg-tracking:-2px;
+  --text-display-md-family:var(--font-family-primary); --text-display-md-size:56px; --text-display-md-line:64px; --text-display-md-weight:600; --text-display-md-tracking:-2px;
+  --text-display-sm-family:var(--font-family-primary); --text-display-sm-size:48px; --text-display-sm-line:56px; --text-display-sm-weight:600; --text-display-sm-tracking:-1px;
+  --text-title-lg-family:var(--font-family-secondary); --text-title-lg-size:40px; --text-title-lg-line:48px; --text-title-lg-weight:600; --text-title-lg-tracking:-1px;
+  --text-title-md-family:var(--font-family-secondary); --text-title-md-size:32px; --text-title-md-line:40px; --text-title-md-weight:600; --text-title-md-tracking:-1px;
+  --text-title-sm-family:var(--font-family-secondary); --text-title-sm-size:28px; --text-title-sm-line:36px; --text-title-sm-weight:600; --text-title-sm-tracking:0px;
+  --text-body-lg-family:var(--font-family-secondary); --text-body-lg-size:18px; --text-body-lg-line:26px; --text-body-lg-weight:400; --text-body-lg-tracking:0px;
+  --text-body-md-family:var(--font-family-secondary); --text-body-md-size:16px; --text-body-md-line:24px; --text-body-md-weight:400; --text-body-md-tracking:0px;
+  --text-body-sm-family:var(--font-family-secondary); --text-body-sm-size:14px; --text-body-sm-line:20px; --text-body-sm-weight:400; --text-body-sm-tracking:0px;
+  --text-label-lg-family:var(--font-family-secondary); --text-label-lg-size:16px; --text-label-lg-line:24px; --text-label-lg-weight:500; --text-label-lg-tracking:0px;
+  --text-label-md-family:var(--font-family-secondary); --text-label-md-size:14px; --text-label-md-line:20px; --text-label-md-weight:500; --text-label-md-tracking:0px;
+  --text-label-sm-family:var(--font-family-secondary); --text-label-sm-size:12px; --text-label-sm-line:16px; --text-label-sm-weight:500; --text-label-sm-tracking:0px;
+  --text-caption-lg-family:var(--font-family-secondary); --text-caption-lg-size:13px; --text-caption-lg-line:18px; --text-caption-lg-weight:400; --text-caption-lg-tracking:0px;
+  --text-caption-md-family:var(--font-family-secondary); --text-caption-md-size:12px; --text-caption-md-line:16px; --text-caption-md-weight:400; --text-caption-md-tracking:0px;
+  --text-caption-sm-family:var(--font-family-secondary); --text-caption-sm-size:10px; --text-caption-sm-line:14px; --text-caption-sm-weight:400; --text-caption-sm-tracking:0px;
+  --text-hero-lg-family:var(--font-family-primary); --text-hero-lg-size:92px; --text-hero-lg-line:108px; --text-hero-lg-weight:700; --text-hero-lg-tracking:-4px;
+  --text-hero-md-family:var(--font-family-primary); --text-hero-md-size:80px; --text-hero-md-line:96px; --text-hero-md-weight:700; --text-hero-md-tracking:-4px;
+  --text-hero-sm-family:var(--font-family-primary); --text-hero-sm-size:72px; --text-hero-sm-line:80px; --text-hero-sm-weight:700; --text-hero-sm-tracking:-2px;
+
+  /* ---- 8. Sizes -------------------------------------------------------------- */
+  --size-icon-xs:12px; --size-icon-sm:16px; --size-icon-md:20px; --size-icon-lg:24px;
+  --size-icon-xl:32px; --size-icon-2xl:40px; --size-icon-3xl:48px;
+  --size-component-sm:24px; --size-component-md:32px; --size-component-lg:40px;
+  --size-component-xl:48px; --size-component-2xl:64px;
+
+  /* ---- 9. Breakpoints ---------------------------------------------------------- */
+  --screen-mobile:390px; --screen-tablet:768px; --screen-desktop:1440px;
+
+  /* ---- 10. Effects & Shadows (kebab-cased per DFTS.md §2.4 convention) -------- */
+  --elevation-interactive-default:0px 1px 3px 0px rgba(0,0,0,0.16);
+  --elevation-interactive-hover:0px 3px 6px 0px rgba(0,0,0,0.16);
+  --elevation-interactive-overlay:0px 10px 20px 0px rgba(0,0,0,0.16);
+  --elevation-content-overlay:0px 14px 28px 0px rgba(0,0,0,0.16);
+  --elevation-content-style:0px 0px 38px 0px rgba(0,0,0,0.16);
+  --focus-ring:0px 0px 0px 4px #0000ff, 0px 0px 0px 2px #f5f7f7;
+
+  /* ---- 11. Motion --------------------------------------------------------------- */
+  --easing-linear:linear; --easing-ease:ease; --easing-ease-in:ease-in;
+  --easing-ease-out:ease-out; --easing-ease-in-out:ease-in-out; --easing-spring:cubic-bezier(0.34,1.56,0.64,1);
+  --duration-0:0ms; --duration-100:100ms; --duration-150:150ms; --duration-200:200ms; --duration-250:250ms;
+  --duration-300:300ms; --duration-400:400ms; --duration-500:500ms; --duration-700:700ms; --duration-1000:1000ms;
+  --duration-1500:1500ms; --duration-2000:2000ms; --duration-2500:2500ms;
+  --delay-0:0ms; --delay-50:50ms; --delay-100:100ms; --delay-150:150ms; --delay-200:200ms; --delay-250:250ms; --delay-300:300ms;
+
+  /* ---- 12. Component Tokens (Applied) — light values -------------------------- */
+  /* Button */
+  --Button-sm-padding-horizontal:8px; --Button-sm-padding-vertical:2px; --Button-sm-gap:4px; --Button-sm-height:32px; --Button-sm-border-radius:8px;
+  --Button-md-padding-horizontal:12px; --Button-md-padding-vertical:4px; --Button-md-gap:8px; --Button-md-height:40px; --Button-md-border-radius:8px;
+  --Button-lg-padding-horizontal:16px; --Button-lg-padding-vertical:8px; --Button-lg-gap:12px; --Button-lg-height:48px; --Button-lg-border-radius:8px;
+  --Button-default-border-width:1px; --Button-focused-border-width:2px;
+  --Button-primary-default-background:#0000ff; --Button-primary-default-content:#f2f2f2;
+  --Button-primary-hover-background:#0000cc; --Button-primary-pressed-background:#0000cc;
+  --Button-primary-focused-background:#0000ff; --Button-primary-focused-border:#000099;
+  --Button-primary-disabled-background:#e5e5e5; --Button-primary-disabled-content:#666666;
+  --Button-secondary-default-background:#f2f2f2; --Button-secondary-default-border:#0000ff; --Button-secondary-default-content:#0000cc;
+  --Button-secondary-hover-background:#e5e5e5; --Button-secondary-pressed-background:#cccccc;
+  --Button-secondary-focused-border:#000099; --Button-secondary-disabled-content:#666666; --Button-secondary-disabled-border:#cccccc;
+  --Button-ghost-default-content:#0000cc; --Button-ghost-hover-background:#e5e5e5; --Button-ghost-pressed-background:#cccccc;
+  --Button-ghost-focused-border:#000099; --Button-ghost-disabled-content:#666666;
+  --Button-destructive-default-background:#ed2012; --Button-destructive-default-content:#f2f2f2;
+  --Button-destructive-hover-background:#be1a0e; --Button-destructive-pressed-background:#be1a0e;
+  --Button-destructive-focused-background:#ed2012; --Button-destructive-focused-border:#8e130b;
+  --Button-destructive-disabled-background:#e5e5e5; --Button-destructive-disabled-content:#666666;
+
+  /* Chip */
+  --Chip-sm-padding-horizontal:4px; --Chip-sm-padding-vertical:2px; --Chip-sm-gap:4px; --Chip-sm-border-radius:9999px; --Chip-sm-border-width:1px;
+  --Chip-md-padding-horizontal:8px; --Chip-md-padding-vertical:4px; --Chip-md-gap:4px; --Chip-md-border-radius:9999px; --Chip-md-border-width:1px;
+  --Chip-lg-padding-horizontal:12px; --Chip-lg-padding-vertical:8px; --Chip-lg-gap:4px; --Chip-lg-border-radius:9999px; --Chip-lg-border-width:1px;
+  --Chip-filled-default-background:#e8e8fc; --Chip-filled-default-content:#0000cc;
+  --Chip-filled-hover-background:#0000ff; --Chip-filled-hover-content:#f2f2f2;
+  --Chip-filled-pressed-background:#0000ff; --Chip-filled-pressed-content:#f2f2f2;
+  --Chip-outlined-default-background:#f2f2f2; --Chip-outlined-default-border:#0000ff; --Chip-outlined-default-content:#0000cc;
+  --Chip-outlined-hover-background:#e5e5e5; --Chip-outlined-hover-content:#0000cc; --Chip-outlined-hover-border:#0000ff;
+  --Chip-outlined-pressed-background:#e5e5e5; --Chip-outlined-pressed-border:#0000ff; --Chip-outlined-pressed-content:#0000cc;
+  --Chip-error-background:#fde9e7; --Chip-error-border:#ed2012; --Chip-error-content:#be1a0e;
+  --Chip-disabled-background:#e5e5e5; --Chip-disabled-content:#666666;
+
+  /* Form-Controls */
+  --Form-Controls-sm-size:16px; --Form-Controls-sm-gap:8px; --Form-Controls-sm-border-width:2px; --Form-Controls-sm-border-radius:4px;
+  --Form-Controls-md-size:20px; --Form-Controls-md-gap:8px; --Form-Controls-md-border-width:2px; --Form-Controls-md-border-radius:4px;
+  --Form-Controls-lg-size:24px; --Form-Controls-lg-gap:8px; --Form-Controls-lg-border-width:2px; --Form-Controls-lg-border-radius:4px;
+  --Form-Controls-switch-sm-track-width:24px; --Form-Controls-switch-sm-border-radius:9999px;
+  --Form-Controls-switch-md-track-width:32px; --Form-Controls-switch-md-border-radius:9999px;
+  --Form-Controls-switch-lg-track-width:40px; --Form-Controls-switch-lg-border-radius:9999px;
+  --Form-Controls-switch-on-track:#0000ff; --Form-Controls-switch-off-track:#cccccc; --Form-Controls-switch-off-border:#808080; --Form-Controls-switch-thumb:#f2f2f2;
+  --Form-Controls-default-border:#808080; --Form-Controls-checked-background:#0000ff; --Form-Controls-checked-content:#f2f2f2;
+  --Form-Controls-hover-border:#0000ff; --Form-Controls-focused-border:#000099;
+  --Form-Controls-error-border:#ed2012; --Form-Controls-error-background:#ed2012;
+  --Form-Controls-disabled-background:#e5e5e5; --Form-Controls-disabled-border:#cccccc; --Form-Controls-disabled-content:#666666;
+  --Form-Controls-label-default:#1a1a1a;
+
+  /* Input-Fields */
+  --Input-Fields-sm-padding-horizontal:8px; --Input-Fields-sm-padding-vertical:8px; --Input-Fields-sm-height:32px; --Input-Fields-sm-border-radius:8px; --Input-Fields-sm-gap:8px; --Input-Fields-sm-border-width:1px;
+  --Input-Fields-md-padding-horizontal:12px; --Input-Fields-md-padding-vertical:8px; --Input-Fields-md-height:40px; --Input-Fields-md-border-radius:8px; --Input-Fields-md-gap:8px; --Input-Fields-md-border-width:1px;
+  --Input-Fields-lg-padding-horizontal:16px; --Input-Fields-lg-padding-vertical:12px; --Input-Fields-lg-height:48px; --Input-Fields-lg-border-radius:8px; --Input-Fields-lg-gap:8px; --Input-Fields-lg-border-width:1px;
+  --Input-Fields-label-gap:4px; --Input-Fields-focused-border-width:2px;
+  --Input-Fields-label-color:#666666; --Input-Fields-focused-border:#000099;
+  --Input-Fields-default-background:#f2f2f2; --Input-Fields-default-border:#b2b2b2; --Input-Fields-default-content:#1a1a1a; --Input-Fields-default-placeholder:#666666;
+  --Input-Fields-hover-border:#808080; --Input-Fields-error-border:#ed2012; --Input-Fields-error-content:#be1a0e;
+  --Input-Fields-disabled-background:#e5e5e5; --Input-Fields-disabled-content:#666666;
+  --Input-Fields-helper-color:#666666; --Input-Fields-helper-error:#be1a0e;
+
+  /* Alert */
+  --Alert-padding-horizontal:16px; --Alert-padding-vertical:12px; --Alert-gap:12px; --Alert-border-radius:12px; --Alert-icon-size:20px; --Alert-border-width:1px;
+  --Alert-info-background:#e7f2fe; --Alert-info-border:#0d80f2; --Alert-info-icon:#0a66c2; --Alert-info-title:#0a66c2; --Alert-info-content:#1a1a1a;
+  --Alert-success-background:#e9fbf0; --Alert-success-border:#24db67; --Alert-success-icon:#1daf52; --Alert-success-title:#1daf52; --Alert-success-content:#1a1a1a;
+  --Alert-warning-background:#fef5e6; --Alert-warning-border:#f9a006; --Alert-warning-icon:#c78005; --Alert-warning-title:#c78005; --Alert-warning-content:#1a1a1a;
+  --Alert-error-background:#fde9e7; --Alert-error-border:#ed2012; --Alert-error-icon:#be1a0e; --Alert-error-title:#be1a0e; --Alert-error-content:#1a1a1a;
+  --Alert-dismiss-icon:#666666;
+
+  /* Toast */
+  --Toast-padding-horizontal:16px; --Toast-padding-vertical:12px; --Toast-gap:12px; --Toast-border-radius:12px;
+  --Toast-default-background:#e5e5e5; --Toast-default-content:#1a1a1a;
+  --Toast-info-background:#e7f2fe; --Toast-info-content:#1a1a1a;
+  --Toast-success-background:#e9fbf0; --Toast-success-content:#1a1a1a;
+  --Toast-warning-background:#fef5e6; --Toast-warning-content:#1a1a1a;
+  --Toast-error-background:#fde9e7; --Toast-error-content:#1a1a1a;
+  --Toast-dismiss-icon:#666666;
+
+  /* Tooltip */
+  --Tooltip-padding-horizontal:8px; --Tooltip-padding-vertical:4px; --Tooltip-border-radius:4px;
+  --Tooltip-background:#1a1a1a; --Tooltip-content:#f2f2f2; --Tooltip-arrow:#1a1a1a;
+
+  /* Loader */
+  --Loader-sm-size:16px; --Loader-sm-border-width:2px; --Loader-md-size:24px; --Loader-md-border-width:2px; --Loader-lg-size:32px; --Loader-lg-border-width:2px;
+  --Loader-track:#e8e8fc; --Loader-fill:#0000ff; --Loader-dot:#0000ff;
+
+  /* Progress-Line */
+  --Progress-Line-height:8px; --Progress-Line-border-radius:9999px;
+  --Progress-Line-track:#e5e5e5; --Progress-Line-fill:#0000ff; --Progress-Line-label:#666666;
+
+  /* Link */
+  --Link-sm-gap:4px; --Link-md-gap:4px; --Link-lg-gap:4px;
+  --Link-default-content:#0000cc; --Link-hover-content:#0000cc; --Link-pressed-content:#f2f2f2;
+  --Link-focused-border:#000099; --Link-error-content:#be1a0e; --Link-disabled-content:#666666;
+
+  /* Avatar */
+  --Avatar-sm-size:16px; --Avatar-sm-border-radius:9999px; --Avatar-md-size:20px; --Avatar-md-border-radius:9999px;
+  --Avatar-lg-size:24px; --Avatar-lg-border-radius:9999px; --Avatar-xl-size:40px; --Avatar-xl-border-radius:9999px;
+  --Avatar-xxl-size:48px; --Avatar-xxl-border-radius:9999px;
+  --Avatar-background:#e8e8fc; --Avatar-content:#0000cc; --Avatar-icon:#0000cc;
+
+  /* Divider */
+  --Divider-border-width:1px; --Divider-color:#b2b2b2;
+
+  /* Tile */
+  --Tile-padding:16px; --Tile-gap:12px; --Tile-border-radius:12px; --Tile-border-width:1px;
+  --Tile-default-background:#f2f2f2; --Tile-default-border:#b2b2b2; --Tile-hover-background:#e5e5e5;
+  --Tile-pressed-background:#cccccc; --Tile-focused-border:#000099; --Tile-disabled-border:#cccccc;
+  --Tile-title:#1a1a1a; --Tile-description:#666666;
+
+  /* Card */
+  --Card-padding:16px; --Card-gap:12px; --Card-border-radius:16px; --Card-border-width:1px;
+  --Card-default-background:#f2f2f2; --Card-default-border:#b2b2b2; --Card-hover-background:#e5e5e5;
+  --Card-focused-border:#000099; --Card-title:#1a1a1a; --Card-description:#666666;
+
+  /* Accordion */
+  --Accordion-header-padding-h:16px; --Accordion-header-padding-v:12px; --Accordion-content-padding:16px; --Accordion-border-radius:12px; --Accordion-border-width:1px;
+  --Accordion-background:#f2f2f2; --Accordion-border:#b2b2b2; --Accordion-hover-background:#e5e5e5;
+  --Accordion-focused-border:#000099; --Accordion-disabled-background:#e5e5e5;
+  --Accordion-title:#1a1a1a; --Accordion-content:#1a1a1a; --Accordion-icon:#666666; --Accordion-divider:#cccccc;
+
+  /* Modal */
+  --Modal-header-padding:24px; --Modal-content-padding:24px; --Modal-footer-padding:24px; --Modal-border-radius:16px;
+  --Modal-background:#f2f2f2; --Modal-title:#1a1a1a; --Modal-divider:#cccccc; --Modal-close-icon:#666666;
+
+  /* Tabs */
+  --Tabs-padding-horizontal:16px; --Tabs-padding-vertical:12px; --Tabs-indicator-height:2px;
+  --Tabs-default-content:#666666; --Tabs-hover-background:#e5e5e5; --Tabs-active-content:#0000cc;
+  --Tabs-active-indicator:#0000ff; --Tabs-disabled-content:#666666; --Tabs-border:#b2b2b2;
+
+  /* Menu */
+  --Menu-item-padding-h:12px; --Menu-item-height:24px; --Menu-item-gap:8px; --Menu-item-border-radius:8px;
+  --Menu-panel-padding:8px; --Menu-panel-border-radius:16px; --Menu-panel-border-width:1px;
+  --Menu-panel-background:#f2f2f2; --Menu-panel-border:#b2b2b2; --Menu-item-default-content:#1a1a1a;
+  --Menu-item-hover-background:#e5e5e5; --Menu-item-active-background:#e8e8fc; --Menu-item-active-content:#0000cc;
+  --Menu-item-disabled-content:#666666; --Menu-item-danger-content:#be1a0e; --Menu-item-icon:#666666;
+
+  /* Breadcrumbs */
+  --Breadcrumbs-gap:4px;
+  --Breadcrumbs-default-content:#0000cc; --Breadcrumbs-hover-content:#0000cc; --Breadcrumbs-active-content:#1a1a1a;
+  --Breadcrumbs-disabled-content:#666666; --Breadcrumbs-separator:#666666;
+
+  /* Navigation-Controls */
+  --Navigation-Controls-filter-padding-h:12px; --Navigation-Controls-filter-padding-v:4px; --Navigation-Controls-filter-border-radius:9999px; --Navigation-Controls-filter-border-width:1px;
+  --Navigation-Controls-segment-padding-h:16px; --Navigation-Controls-segment-height:24px; --Navigation-Controls-segment-border-radius:8px;
+  --Navigation-Controls-filter-default-background:#f2f2f2; --Navigation-Controls-filter-default-border:#b2b2b2; --Navigation-Controls-filter-default-content:#1a1a1a;
+  --Navigation-Controls-filter-active-background:#e8e8fc; --Navigation-Controls-filter-active-border:#0000ff; --Navigation-Controls-filter-active-content:#0000cc;
+  --Navigation-Controls-filter-hover-background:#e5e5e5; --Navigation-Controls-filter-disabled-content:#666666;
+  --Navigation-Controls-segment-track-background:#e5e5e5; --Navigation-Controls-segment-track-border:#b2b2b2;
+  --Navigation-Controls-segment-active-background:#f2f2f2; --Navigation-Controls-segment-active-content:#0000cc;
+  --Navigation-Controls-segment-default-content:#666666; --Navigation-Controls-segment-disabled-content:#666666;
+
+  /* Table */
+  --Table-cell-padding-h:12px; --Table-cell-height:24px; --Table-cell-border-width:1px;
+  --Table-header-background:#cccccc; --Table-header-content:#1a1a1a; --Table-header-hover-background:#e5e5e5; --Table-header-sorted-content:#0000cc;
+  --Table-cell-default-background:#f2f2f2; --Table-cell-default-content:#1a1a1a; --Table-cell-hover-background:#e5e5e5;
+  --Table-cell-selected-background:#e8e8fc; --Table-cell-selected-content:#0000cc;
+  --Table-cell-error-background:#fde9e7; --Table-cell-error-content:#be1a0e; --Table-border:#b2b2b2;
+
+  /* Date-Picker */
+  --Date-Picker-padding:16px; --Date-Picker-border-radius:16px; --Date-Picker-cell-size:24px; --Date-Picker-cell-radius:8px; --Date-Picker-border-width:1px;
+  --Date-Picker-background:#f2f2f2; --Date-Picker-border:#b2b2b2; --Date-Picker-header-content:#1a1a1a; --Date-Picker-nav-content:#0000cc;
+  --Date-Picker-weekday-content:#666666; --Date-Picker-day-default-content:#1a1a1a; --Date-Picker-day-hover-background:#e5e5e5;
+  --Date-Picker-day-today-background:#e8e8fc; --Date-Picker-day-today-content:#0000cc;
+  --Date-Picker-day-selected-background:#0000ff; --Date-Picker-day-selected-content:#f2f2f2;
+
+  /* Bottom-Sheet */
+  --Bottom-Sheet-border-radius-top:16px; --Bottom-Sheet-header-padding:24px; --Bottom-Sheet-handle-width:32px; --Bottom-Sheet-handle-height:2px;
+  --Bottom-Sheet-background:#f2f2f2; --Bottom-Sheet-handle:#b2b2b2; --Bottom-Sheet-title:#1a1a1a; --Bottom-Sheet-close-icon:#666666;
+
+  /* Carousel */
+  --Carousel-gap:16px; --Carousel-slide-radius:12px; --Carousel-dot-size:8px; --Carousel-dot-radius:9999px;
+  --Carousel-slide-background:#e5e5e5; --Carousel-dot-default:#e8e8fc; --Carousel-dot-active:#0000ff;
+  --Carousel-nav-content:#0000cc; --Carousel-nav-background:#e5e5e5;
+}
+
+/* ==========================================================================
+   Dark theme — overrides only (values identical to light are inherited)
+   ========================================================================== */
+[data-theme="dark"] {
+  /* Semantic */
+  --surface-neutral-default:#1a1a1a; --surface-neutral-subtle:#333333; --surface-neutral-strong:#4d4d4d; --surface-neutral-on:#f2f2f2;
+  --surface-brand-default:#3333ff; --surface-brand-subtle:#000033; --surface-brand-strong:#6666ff; --surface-brand-on:#1a1a1a;
+  --surface-info-default:#3d99f5; --surface-info-subtle:#084d91; --surface-info-strong:#6eb2f7; --surface-info-on:#1a1a1a;
+  --surface-success-default:#50e285; --surface-success-subtle:#15843e; --surface-success-strong:#7beaa4; --surface-success-on:#1a1a1a;
+  --surface-warning-default:#fab338; --surface-warning-subtle:#956004; --surface-warning-strong:#fbc66a;
+  --surface-error-default:#f14d41; --surface-error-subtle:#8e130b; --surface-error-strong:#f47971; --surface-error-on:#1a1a1a;
+  --content-neutral-default:#f2f2f2; --content-neutral-subtle:#999999; --content-neutral-strong:#cccccc; --content-neutral-on:#1a1a1a;
+  --content-brand-default:#6666ff; --content-brand-subtle:#0000ff; --content-brand-strong:#9999ff; --content-brand-on:#1a1a1a;
+  --content-info-default:#6eb2f7; --content-info-subtle:#0d80f2; --content-info-strong:#9eccfa; --content-info-on:#1a1a1a;
+  --content-success-default:#7beaa4; --content-success-subtle:#24db67; --content-success-strong:#a7f1c2; --content-success-on:#1a1a1a;
+  --content-warning-default:#fbc66a; --content-warning-subtle:#f9a006; --content-warning-strong:#fcd99c;
+  --content-error-default:#f47971; --content-error-subtle:#ed2012; --content-error-strong:#f8a6a0; --content-error-on:#1a1a1a;
+  --border-neutral-default:#666666; --border-neutral-subtle:#4d4d4d; --border-neutral-strong:#999999; --border-neutral-on:#f2f2f2;
+  --border-brand-default:#3333ff; --border-brand-subtle:#000099; --border-brand-strong:#9999ff; --border-brand-on:#1a1a1a;
+  --border-info-default:#3d99f5; --border-info-subtle:#084d91; --border-info-strong:#9eccfa; --border-info-on:#1a1a1a;
+  --border-success-default:#50e285; --border-success-subtle:#15843e; --border-success-strong:#a7f1c2; --border-success-on:#1a1a1a;
+  --border-warning-default:#fab338; --border-warning-subtle:#956004; --border-warning-strong:#fcd99c;
+  --border-error-default:#f14d41; --border-error-subtle:#8e130b; --border-error-strong:#f8a6a0; --border-error-on:#1a1a1a;
+
+  /* Button */
+  --Button-primary-default-background:#3333ff; --Button-primary-default-content:#1a1a1a;
+  --Button-primary-hover-background:#6666ff; --Button-primary-pressed-background:#6666ff;
+  --Button-primary-focused-background:#3333ff; --Button-primary-focused-border:#9999ff;
+  --Button-primary-disabled-background:#333333; --Button-primary-disabled-content:#999999;
+  --Button-secondary-default-background:#1a1a1a; --Button-secondary-default-border:#3333ff; --Button-secondary-default-content:#6666ff;
+  --Button-secondary-hover-background:#333333; --Button-secondary-pressed-background:#4d4d4d;
+  --Button-secondary-focused-border:#9999ff; --Button-secondary-disabled-content:#999999; --Button-secondary-disabled-border:#4d4d4d;
+  --Button-ghost-default-content:#6666ff; --Button-ghost-hover-background:#333333; --Button-ghost-pressed-background:#4d4d4d;
+  --Button-ghost-focused-border:#9999ff; --Button-ghost-disabled-content:#999999;
+  --Button-destructive-default-background:#f14d41; --Button-destructive-default-content:#1a1a1a;
+  --Button-destructive-hover-background:#f47971; --Button-destructive-pressed-background:#f47971;
+  --Button-destructive-focused-background:#f14d41; --Button-destructive-focused-border:#f8a6a0;
+  --Button-destructive-disabled-background:#333333; --Button-destructive-disabled-content:#999999;
+
+  /* Chip */
+  --Chip-filled-default-background:#000033; --Chip-filled-default-content:#6666ff;
+  --Chip-filled-hover-background:#3333ff; --Chip-filled-hover-content:#1a1a1a;
+  --Chip-filled-pressed-background:#3333ff; --Chip-filled-pressed-content:#1a1a1a;
+  --Chip-outlined-default-background:#1a1a1a; --Chip-outlined-default-border:#3333ff; --Chip-outlined-default-content:#6666ff;
+  --Chip-outlined-hover-background:#333333; --Chip-outlined-hover-content:#6666ff; --Chip-outlined-hover-border:#3333ff;
+  --Chip-outlined-pressed-background:#333333; --Chip-outlined-pressed-border:#3333ff; --Chip-outlined-pressed-content:#6666ff;
+  --Chip-error-background:#8e130b; --Chip-error-border:#f14d41; --Chip-error-content:#f47971;
+  --Chip-disabled-background:#333333; --Chip-disabled-content:#999999;
+
+  /* Form-Controls */
+  --Form-Controls-switch-on-track:#3333ff; --Form-Controls-switch-off-track:#4d4d4d; --Form-Controls-switch-off-border:#999999; --Form-Controls-switch-thumb:#1a1a1a;
+  --Form-Controls-default-border:#999999; --Form-Controls-checked-background:#3333ff; --Form-Controls-checked-content:#1a1a1a;
+  --Form-Controls-hover-border:#3333ff; --Form-Controls-focused-border:#9999ff;
+  --Form-Controls-error-border:#f14d41; --Form-Controls-error-background:#f14d41;
+  --Form-Controls-disabled-background:#333333; --Form-Controls-disabled-border:#4d4d4d; --Form-Controls-disabled-content:#999999;
+  --Form-Controls-label-default:#f2f2f2;
+
+  /* Input-Fields */
+  --Input-Fields-label-color:#999999; --Input-Fields-focused-border:#9999ff;
+  --Input-Fields-default-background:#1a1a1a; --Input-Fields-default-border:#666666; --Input-Fields-default-content:#f2f2f2; --Input-Fields-default-placeholder:#999999;
+  --Input-Fields-hover-border:#999999; --Input-Fields-error-border:#f14d41; --Input-Fields-error-content:#f47971;
+  --Input-Fields-disabled-background:#333333; --Input-Fields-disabled-content:#999999;
+  --Input-Fields-helper-color:#999999; --Input-Fields-helper-error:#f47971;
+
+  /* Alert */
+  --Alert-info-background:#084d91; --Alert-info-border:#3d99f5; --Alert-info-icon:#6eb2f7; --Alert-info-title:#6eb2f7; --Alert-info-content:#f2f2f2;
+  --Alert-success-background:#15843e; --Alert-success-border:#50e285; --Alert-success-icon:#7beaa4; --Alert-success-title:#7beaa4; --Alert-success-content:#f2f2f2;
+  --Alert-warning-background:#956004; --Alert-warning-border:#fab338; --Alert-warning-icon:#fbc66a; --Alert-warning-title:#fbc66a; --Alert-warning-content:#f2f2f2;
+  --Alert-error-background:#8e130b; --Alert-error-border:#f14d41; --Alert-error-icon:#f47971; --Alert-error-title:#f47971; --Alert-error-content:#f2f2f2;
+  --Alert-dismiss-icon:#999999;
+
+  /* Toast */
+  --Toast-default-background:#333333; --Toast-default-content:#f2f2f2;
+  --Toast-info-background:#084d91; --Toast-info-content:#f2f2f2;
+  --Toast-success-background:#15843e; --Toast-success-content:#f2f2f2;
+  --Toast-warning-background:#956004; --Toast-warning-content:#f2f2f2;
+  --Toast-error-background:#8e130b; --Toast-error-content:#f2f2f2;
+  --Toast-dismiss-icon:#999999;
+
+  /* Tooltip */
+  --Tooltip-background:#f2f2f2; --Tooltip-content:#1a1a1a; --Tooltip-arrow:#f2f2f2;
+
+  /* Loader */
+  --Loader-track:#000033; --Loader-fill:#3333ff; --Loader-dot:#3333ff;
+
+  /* Progress-Line */
+  --Progress-Line-track:#333333; --Progress-Line-fill:#3333ff; --Progress-Line-label:#999999;
+
+  /* Link */
+  --Link-default-content:#6666ff; --Link-hover-content:#6666ff; --Link-pressed-content:#1a1a1a;
+  --Link-focused-border:#9999ff; --Link-error-content:#f47971; --Link-disabled-content:#999999;
+
+  /* Avatar */
+  --Avatar-background:#000033; --Avatar-content:#6666ff; --Avatar-icon:#6666ff;
+
+  /* Divider */
+  --Divider-color:#666666;
+
+  /* Tile */
+  --Tile-default-background:#1a1a1a; --Tile-default-border:#666666; --Tile-hover-background:#333333;
+  --Tile-pressed-background:#4d4d4d; --Tile-focused-border:#9999ff; --Tile-disabled-border:#4d4d4d;
+  --Tile-title:#f2f2f2; --Tile-description:#999999;
+
+  /* Card */
+  --Card-default-background:#1a1a1a; --Card-default-border:#666666; --Card-hover-background:#333333;
+  --Card-focused-border:#9999ff; --Card-title:#f2f2f2; --Card-description:#999999;
+
+  /* Accordion */
+  --Accordion-background:#1a1a1a; --Accordion-border:#666666; --Accordion-hover-background:#333333;
+  --Accordion-focused-border:#9999ff; --Accordion-disabled-background:#333333;
+  --Accordion-title:#f2f2f2; --Accordion-content:#f2f2f2; --Accordion-icon:#999999; --Accordion-divider:#4d4d4d;
+
+  /* Modal */
+  --Modal-background:#1a1a1a; --Modal-title:#f2f2f2; --Modal-divider:#4d4d4d; --Modal-close-icon:#999999;
+
+  /* Tabs */
+  --Tabs-default-content:#999999; --Tabs-hover-background:#333333; --Tabs-active-content:#6666ff;
+  --Tabs-active-indicator:#3333ff; --Tabs-disabled-content:#999999; --Tabs-border:#666666;
+
+  /* Menu */
+  --Menu-panel-background:#1a1a1a; --Menu-panel-border:#666666; --Menu-item-default-content:#f2f2f2;
+  --Menu-item-hover-background:#333333; --Menu-item-active-background:#000033; --Menu-item-active-content:#6666ff;
+  --Menu-item-disabled-content:#999999; --Menu-item-danger-content:#f47971; --Menu-item-icon:#999999;
+
+  /* Breadcrumbs */
+  --Breadcrumbs-default-content:#6666ff; --Breadcrumbs-hover-content:#6666ff; --Breadcrumbs-active-content:#f2f2f2;
+  --Breadcrumbs-disabled-content:#999999; --Breadcrumbs-separator:#999999;
+
+  /* Navigation-Controls */
+  --Navigation-Controls-filter-default-background:#1a1a1a; --Navigation-Controls-filter-default-border:#666666; --Navigation-Controls-filter-default-content:#f2f2f2;
+  --Navigation-Controls-filter-active-background:#000033; --Navigation-Controls-filter-active-border:#3333ff; --Navigation-Controls-filter-active-content:#6666ff;
+  --Navigation-Controls-filter-hover-background:#333333; --Navigation-Controls-filter-disabled-content:#999999;
+  --Navigation-Controls-segment-track-background:#333333; --Navigation-Controls-segment-track-border:#666666;
+  --Navigation-Controls-segment-active-background:#1a1a1a; --Navigation-Controls-segment-active-content:#6666ff;
+  --Navigation-Controls-segment-default-content:#999999; --Navigation-Controls-segment-disabled-content:#999999;
+
+  /* Table */
+  --Table-header-background:#4d4d4d; --Table-header-content:#f2f2f2; --Table-header-hover-background:#333333; --Table-header-sorted-content:#6666ff;
+  --Table-cell-default-background:#1a1a1a; --Table-cell-default-content:#f2f2f2; --Table-cell-hover-background:#333333;
+  --Table-cell-selected-background:#000033; --Table-cell-selected-content:#6666ff;
+  --Table-cell-error-background:#8e130b; --Table-cell-error-content:#f47971; --Table-border:#666666;
+
+  /* Date-Picker */
+  --Date-Picker-background:#1a1a1a; --Date-Picker-border:#666666; --Date-Picker-header-content:#f2f2f2; --Date-Picker-nav-content:#6666ff;
+  --Date-Picker-weekday-content:#999999; --Date-Picker-day-default-content:#f2f2f2; --Date-Picker-day-hover-background:#333333;
+  --Date-Picker-day-today-background:#000033; --Date-Picker-day-today-content:#6666ff;
+  --Date-Picker-day-selected-background:#3333ff; --Date-Picker-day-selected-content:#1a1a1a;
+
+  /* Bottom-Sheet */
+  --Bottom-Sheet-background:#1a1a1a; --Bottom-Sheet-handle:#666666; --Bottom-Sheet-title:#f2f2f2; --Bottom-Sheet-close-icon:#999999;
+
+  /* Carousel */
+  --Carousel-slide-background:#333333; --Carousel-dot-default:#000033; --Carousel-dot-active:#3333ff;
+  --Carousel-nav-content:#6666ff; --Carousel-nav-background:#333333;
+}

@@ -1,0 +1,9 @@
+.dfts-loader { display: inline-flex; }
+.dfts-loader__spin {
+  display: block; border-radius: var(--radius-full); border-style: solid; border-color: var(--Loader-track);
+  border-top-color: var(--Loader-fill); animation: dfts-spin var(--duration-700) linear infinite;
+}
+.dfts-loader--sm .dfts-loader__spin { width: var(--Loader-sm-size); height: var(--Loader-sm-size); border-width: var(--Loader-sm-border-width); }
+.dfts-loader--md .dfts-loader__spin { width: var(--Loader-md-size); height: var(--Loader-md-size); border-width: var(--Loader-md-border-width); }
+.dfts-loader--lg .dfts-loader__spin { width: var(--Loader-lg-size); height: var(--Loader-lg-size); border-width: var(--Loader-lg-border-width); }
+@keyframes dfts-spin { to { transform: rotate(360deg); } }

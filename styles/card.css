@@ -1,0 +1,12 @@
+.dfts-card {
+  display: flex; flex-direction: column; gap: var(--Card-gap); padding: var(--Card-padding);
+  border-radius: var(--Card-border-radius); border: var(--Card-border-width) solid var(--Card-default-border);
+  background: var(--Card-default-background); font-family: var(--font-family-secondary);
+  text-align: left; text-decoration: none; width: 100%;
+}
+.dfts-card--interactive { cursor: pointer; transition: background-color var(--duration-150) var(--easing-ease-out); }
+.dfts-card--interactive:hover { background: var(--Card-hover-background); }
+.dfts-card--interactive:focus-visible { box-shadow: var(--focus-ring); border-color: var(--Card-focused-border); }
+.dfts-card__title { margin: 0; font-size: var(--font-size-16); font-weight: var(--font-weight-semibold); color: var(--Card-title); }
+.dfts-card__description { margin: 0; font-size: var(--font-size-13); color: var(--Card-description); }
+.dfts-card__footer { margin-top: var(--spacing-xs); display: flex; gap: var(--spacing-sm); }

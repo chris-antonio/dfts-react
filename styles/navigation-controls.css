@@ -1,0 +1,26 @@
+.dfts-filter-chip {
+  display: inline-flex; align-items: center; gap: var(--spacing-2xs);
+  padding: var(--Navigation-Controls-filter-padding-v) var(--Navigation-Controls-filter-padding-h);
+  border-radius: var(--Navigation-Controls-filter-border-radius); border: var(--Navigation-Controls-filter-border-width) solid var(--Navigation-Controls-filter-default-border);
+  background: var(--Navigation-Controls-filter-default-background); color: var(--Navigation-Controls-filter-default-content);
+  font-family: var(--font-family-secondary); font-size: var(--font-size-13); cursor: pointer;
+  transition: background-color var(--duration-150) var(--easing-ease-out);
+}
+.dfts-filter-chip:hover:not(:disabled) { background: var(--Navigation-Controls-filter-hover-background); }
+.dfts-filter-chip:focus-visible { box-shadow: var(--focus-ring); }
+.dfts-filter-chip:disabled { color: var(--Navigation-Controls-filter-disabled-content); cursor: not-allowed; }
+.dfts-filter-chip--active { background: var(--Navigation-Controls-filter-active-background); border-color: var(--Navigation-Controls-filter-active-border); color: var(--Navigation-Controls-filter-active-content); }
+
+.dfts-segmented {
+  display: inline-flex; padding: 2px; border-radius: calc(var(--Navigation-Controls-segment-border-radius) + 2px);
+  background: var(--Navigation-Controls-segment-track-background); border: 1px solid var(--Navigation-Controls-segment-track-border); gap: 2px;
+}
+.dfts-segmented__segment {
+  padding: 0 var(--Navigation-Controls-segment-padding-h); height: var(--Navigation-Controls-segment-height);
+  border-radius: var(--Navigation-Controls-segment-border-radius); border: none; background: transparent;
+  color: var(--Navigation-Controls-segment-default-content); font-family: var(--font-family-secondary); font-size: var(--font-size-13);
+  cursor: pointer; transition: background-color var(--duration-150) var(--easing-ease-out), color var(--duration-150) var(--easing-ease-out);
+}
+.dfts-segmented__segment:focus-visible { box-shadow: var(--focus-ring); }
+.dfts-segmented__segment:disabled { color: var(--Navigation-Controls-segment-disabled-content); cursor: not-allowed; }
+.dfts-segmented__segment--active { background: var(--Navigation-Controls-segment-active-background); color: var(--Navigation-Controls-segment-active-content); box-shadow: var(--elevation-interactive-default); }

@@ -1,0 +1,32 @@
+.dfts-alert {
+  display: flex; align-items: flex-start; gap: var(--Alert-gap);
+  padding: var(--Alert-padding-vertical) var(--Alert-padding-horizontal);
+  border-radius: var(--Alert-border-radius); border: var(--Alert-border-width) solid transparent;
+  font-family: var(--font-family-secondary);
+}
+.dfts-alert--info { background: var(--Alert-info-background); border-color: var(--Alert-info-border); }
+.dfts-alert--info .dfts-alert__icon { color: var(--Alert-info-icon); }
+.dfts-alert--info .dfts-alert__title { color: var(--Alert-info-title); }
+.dfts-alert--info .dfts-alert__content { color: var(--Alert-info-content); }
+
+.dfts-alert--success { background: var(--Alert-success-background); border-color: var(--Alert-success-border); }
+.dfts-alert--success .dfts-alert__icon { color: var(--Alert-success-icon); }
+.dfts-alert--success .dfts-alert__title { color: var(--Alert-success-title); }
+.dfts-alert--success .dfts-alert__content { color: var(--Alert-success-content); }
+
+.dfts-alert--warning { background: var(--Alert-warning-background); border-color: var(--Alert-warning-border); }
+.dfts-alert--warning .dfts-alert__icon { color: var(--Alert-warning-icon); }
+.dfts-alert--warning .dfts-alert__title { color: var(--Alert-warning-title); }
+.dfts-alert--warning .dfts-alert__content { color: var(--Alert-warning-content); }
+
+.dfts-alert--error { background: var(--Alert-error-background); border-color: var(--Alert-error-border); }
+.dfts-alert--error .dfts-alert__icon { color: var(--Alert-error-icon); }
+.dfts-alert--error .dfts-alert__title { color: var(--Alert-error-title); }
+.dfts-alert--error .dfts-alert__content { color: var(--Alert-error-content); }
+
+.dfts-alert__icon { flex-shrink: 0; }
+.dfts-alert__body { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.dfts-alert__title { margin: 0; font-size: var(--font-size-14); font-weight: var(--font-weight-semibold); }
+.dfts-alert__content { margin: 0; font-size: var(--font-size-13); line-height: var(--line-height-13); }
+.dfts-alert__dismiss { border: none; background: transparent; cursor: pointer; color: var(--Alert-dismiss-icon); flex-shrink: 0; padding: 0; display: inline-flex; }
+.dfts-alert__dismiss:focus-visible { box-shadow: var(--focus-ring); border-radius: var(--radius-xs); }

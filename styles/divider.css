@@ -1,0 +1,3 @@
+.dfts-divider { border: none; background: var(--Divider-color); margin: 0; }
+.dfts-divider--horizontal { width: 100%; height: var(--Divider-border-width); }
+.dfts-divider--vertical { width: var(--Divider-border-width); height: 100%; align-self: stretch; }
