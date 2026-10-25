@@ -1,6 +1,6 @@
 # DFTS React Component Kit
 
-A React implementation of all 24 components documented in `DFTS.md`, built against
+A React implementation of all 24 components documented in `DFTS.md` (plus the `TextArea`, `Select` and `PhoneField` input variants from the Figma Components library, in `InputFields.jsx`), built against
 the tokens in `DFTS-tokens.md`, plus an interactive demo page with a light/dark
 theme switch.
 
