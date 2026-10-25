@@ -58,6 +58,10 @@ function App() {
   const [radioValue, setRadioValue] = React.useState("plan-pro");
   const [switchOn, setSwitchOn] = React.useState(true);
   const [textValue, setTextValue] = React.useState("");
+  const [bioValue, setBioValue] = React.useState("");
+  const [selectValue, setSelectValue] = React.useState("");
+  const [multiSelectValue, setMultiSelectValue] = React.useState(["design"]);
+  const [phoneValue, setPhoneValue] = React.useState({ code: "+33", number: "" });
   const [emailValue, setEmailValue] = React.useState("not-an-email");
   const [alertVisible, setAlertVisible] = React.useState(true);
   const [filters, setFilters] = React.useState(() => new Set(["design"]));
@@ -216,11 +220,26 @@ function App() {
             </Row>
           </Section>
 
-          <Section id="input-fields" title="Input Fields" description="size: sm / md / lg · error and helper text states">
+          <Section id="input-fields" title="Input Fields" description="TextField, TextArea, Select (single / multiple) and PhoneField · size: sm / md / lg · error and helper text states">
             <Row>
               <TextField id="tf-1" label="Full name" placeholder="Ada Lovelace" value={textValue} onChange={(e) => setTextValue(e.target.value)} leadingIcon="person" helperText="As it appears on your ID" />
               <TextField id="tf-2" label="Email" value={emailValue} onChange={(e) => setEmailValue(e.target.value)} error={!emailValue.includes("@") ? "Enter a valid email address" : undefined} />
               <TextField id="tf-3" label="Disabled" value="Can't edit this" disabled onChange={() => {}} />
+            </Row>
+            <Row>
+              <TextArea id="ta-1" label="Bio" placeholder="Tell us about yourself" value={bioValue} onChange={(e) => setBioValue(e.target.value)} helperText="Max 280 characters" />
+              <TextArea id="ta-2" label="Notes" error="This field is required" value="" onChange={() => {}} />
+              <TextArea id="ta-3" label="Disabled" value="Can't edit this" disabled onChange={() => {}} />
+            </Row>
+            <Row>
+              <Select id="sel-1" label="Role" value={selectValue} onChange={setSelectValue} options={[{ value: "design", label: "Design" }, { value: "eng", label: "Engineering" }, { value: "pm", label: "Product" }]} helperText="Single select" />
+              <Select id="sel-2" label="Teams" multiple value={multiSelectValue} onChange={setMultiSelectValue} options={[{ value: "design", label: "Design" }, { value: "eng", label: "Engineering" }, { value: "pm", label: "Product" }]} helperText="Multiple select" />
+              <Select id="sel-3" label="Error" error="Pick an option" value="" onChange={() => {}} options={["One", "Two"]} />
+              <Select id="sel-4" label="Disabled" disabled value="" onChange={() => {}} options={["One", "Two"]} />
+            </Row>
+            <Row>
+              <PhoneField id="ph-1" value={phoneValue} onChange={setPhoneValue} helperText="We'll only use this for sign-in codes" />
+              <PhoneField id="ph-2" size="sm" value={{ code: "+44", number: "" }} onChange={() => {}} error="Enter a valid number" />
             </Row>
           </Section>
 
