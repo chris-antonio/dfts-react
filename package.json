@@ -6,6 +6,7 @@
   "main": "./lib/index.js",
   "module": "./lib/index.js",
   "types": "./lib/index.d.ts",
+  "bin": { "dfts-mcp": "./mcp/server.mjs" },
   "exports": {
     ".": { "types": "./lib/index.d.ts", "import": "./lib/index.js" },
     "./styles.css": "./lib/styles.css",
@@ -13,11 +14,13 @@
     "./package.json": "./package.json"
   },
   "sideEffects": ["*.css"],
-  "files": ["lib", "styles", "DFTS.md", "DFTS-tokens.md"],
+  "files": ["lib", "styles", "mcp", "DFTS.md", "DFTS-tokens.md", "components.json", "llms.txt", "AGENTS.md"],
   "scripts": {
     "build": "node scripts/build-package.mjs",
     "prepare": "npm run build",
-    "test": "node scripts/smoke-test.mjs"
+    "test": "node scripts/smoke-test.mjs",
+    "docs": "node scripts/build-docs.mjs",
+    "mcp": "node mcp/server.mjs"
   },
   "peerDependencies": { "react": ">=18", "react-dom": ">=18" },
   "devDependencies": { "esbuild": "^0.24.0", "react": "^18.3.1", "react-dom": "^18.3.1" },
