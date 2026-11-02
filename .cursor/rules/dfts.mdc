@@ -1,0 +1,11 @@
+---
+description: DFTS React design system rules
+alwaysApply: true
+---
+
+Follow the instructions in `AGENTS.md` at the repo root. In short:
+
+- Use components from `@chris-antonio/dfts-react`; check `components.json` for exact props, defaults and allowed values.
+- Style only with design tokens (`var(--...)` from `styles/tokens.css`). Never hardcode colours, spacing or radii.
+- `src/components/*.jsx` are global-scope function components with no imports. Keep them that way.
+- After changing components run `npm run build`, `npm test` and `npm run docs`.
