@@ -1,0 +1,129 @@
+# Code owners for the DFTS React kit.
+# The last matching pattern wins, so the default goes first.
+
+# Default owner (shared files: tokens, base styles, scripts, docs, demo)
+*  @chris-antonio
+
+# Accordion
+/src/components/Accordion.jsx                   @chris-antonio
+/styles/accordion.css                           @chris-antonio
+/dist/components/Accordion.js                   @chris-antonio
+
+# Alert
+/src/components/Alert.jsx                       @chris-antonio
+/styles/alert.css                               @chris-antonio
+/dist/components/Alert.js                       @chris-antonio
+
+# Avatar
+/src/components/Avatar.jsx                      @chris-antonio
+/styles/avatar.css                              @chris-antonio
+/dist/components/Avatar.js                      @chris-antonio
+
+# BottomSheet
+/src/components/BottomSheet.jsx                 @chris-antonio
+/styles/bottom-sheet.css                        @chris-antonio
+/dist/components/BottomSheet.js                 @chris-antonio
+
+# Breadcrumbs
+/src/components/Breadcrumbs.jsx                 @chris-antonio
+/styles/breadcrumbs.css                         @chris-antonio
+/dist/components/Breadcrumbs.js                 @chris-antonio
+
+# Button
+/src/components/Button.jsx                      @chris-antonio
+/styles/button.css                              @chris-antonio
+/dist/components/Button.js                      @chris-antonio
+
+# Card
+/src/components/Card.jsx                        @chris-antonio
+/styles/card.css                                @chris-antonio
+/dist/components/Card.js                        @chris-antonio
+
+# Carousel
+/src/components/Carousel.jsx                    @chris-antonio
+/styles/carousel.css                            @chris-antonio
+/dist/components/Carousel.js                    @chris-antonio
+
+# Chip
+/src/components/Chip.jsx                        @chris-antonio
+/styles/chip.css                                @chris-antonio
+/dist/components/Chip.js                        @chris-antonio
+
+# DatePicker
+/src/components/DatePicker.jsx                  @chris-antonio
+/styles/date-picker.css                         @chris-antonio
+/dist/components/DatePicker.js                  @chris-antonio
+
+# Divider
+/src/components/Divider.jsx                     @chris-antonio
+/styles/divider.css                             @chris-antonio
+/dist/components/Divider.js                     @chris-antonio
+
+# FormControls
+/src/components/FormControls.jsx                @chris-antonio
+/styles/form-controls.css                       @chris-antonio
+/dist/components/FormControls.js                @chris-antonio
+
+# Icon
+/src/components/Icon.jsx                        @chris-antonio
+/dist/components/Icon.js                        @chris-antonio
+
+# InputFields
+/src/components/InputFields.jsx                 @chris-antonio
+/styles/input-fields.css                        @chris-antonio
+/dist/components/InputFields.js                 @chris-antonio
+
+# Link
+/src/components/Link.jsx                        @chris-antonio
+/styles/link.css                                @chris-antonio
+/dist/components/Link.js                        @chris-antonio
+
+# Loader
+/src/components/Loader.jsx                      @chris-antonio
+/styles/loader.css                              @chris-antonio
+/dist/components/Loader.js                      @chris-antonio
+
+# Menu
+/src/components/Menu.jsx                        @chris-antonio
+/styles/menu.css                                @chris-antonio
+/dist/components/Menu.js                        @chris-antonio
+
+# Modal
+/src/components/Modal.jsx                       @chris-antonio
+/styles/modal.css                               @chris-antonio
+/dist/components/Modal.js                       @chris-antonio
+
+# NavigationControls
+/src/components/NavigationControls.jsx          @chris-antonio
+/styles/navigation-controls.css                 @chris-antonio
+/dist/components/NavigationControls.js          @chris-antonio
+
+# ProgressLine
+/src/components/ProgressLine.jsx                @chris-antonio
+/styles/progress-line.css                       @chris-antonio
+/dist/components/ProgressLine.js                @chris-antonio
+
+# Table
+/src/components/Table.jsx                       @chris-antonio
+/styles/table.css                               @chris-antonio
+/dist/components/Table.js                       @chris-antonio
+
+# Tabs
+/src/components/Tabs.jsx                        @chris-antonio
+/styles/tabs.css                                @chris-antonio
+/dist/components/Tabs.js                        @chris-antonio
+
+# Tile
+/src/components/Tile.jsx                        @chris-antonio
+/styles/tile.css                                @chris-antonio
+/dist/components/Tile.js                        @chris-antonio
+
+# Toast
+/src/components/Toast.jsx                       @chris-antonio
+/styles/toast.css                               @chris-antonio
+/dist/components/Toast.js                       @chris-antonio
+
+# Tooltip
+/src/components/Tooltip.jsx                     @chris-antonio
+/styles/tooltip.css                             @chris-antonio
+/dist/components/Tooltip.js                     @chris-antonio
