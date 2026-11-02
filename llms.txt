@@ -1,0 +1,53 @@
+# DFTS React
+
+> DFTS is a token-driven design system: React components, CSS design tokens (light and dark) and usage guidelines. Components are function components styled with `dfts-*` class names and CSS custom properties from `styles/tokens.css`. Package: `@chris-antonio/dfts-react`.
+
+Import components from the package and load `styles.css` once at the app root. Set `data-theme="dark"` on `<html>` for dark mode. Never hardcode colours, spacing or radii: use the tokens.
+
+## Docs
+
+- [UI generation guide](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/DFTS.md): conventions, accessibility rules, anatomy and states for every component, composition patterns, do's and don'ts
+- [Design tokens](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/DFTS-tokens.md): every CSS variable with its light and dark value
+- [Component manifest](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/components.json): JSON description of every component, its props, defaults and allowed values
+- [README](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/README.md): install, build and publish
+- [Agent instructions](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/AGENTS.md): rules for AI coding assistants working with this kit
+
+## Components
+
+- [Accordion](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Accordion.jsx): Accordion — Progressive disclosure. Renders a group of AccordionItems.
+- [Alert](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Alert.jsx): Alert — Persistent inline contextual message. variant: info|success|warning|error.
+- [Avatar](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Avatar.jsx): Avatar — Represents a user/entity via image, initials, or fallback icon. size: sm|md|lg|xl|xxl.
+- [BottomSheet](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/BottomSheet.jsx): Bottom-Sheet — Mobile-first overlay panel sliding from the bottom edge. Same dialog semantics as Modal.
+- [Breadcrumbs](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Breadcrumbs.jsx): Breadcrumbs — Hierarchical location trail. items: [{label, href}] — last item renders as current page.
+- [Button](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Button.jsx): Button — Primary call-to-action element. variant: primary|secondary|ghost|destructive. size: sm|md|lg.
+- [Card](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Card.jsx): Card — General-purpose content container.
+- [Carousel](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Carousel.jsx): Carousel — Horizontally paged content. slides: [{id, content}]
+- [Checkbox](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/FormControls.jsx): Form-Controls — Checkbox, Radio, and Switch. size: sm|md|lg.
+- [Chip](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Chip.jsx): Chip — variant: filled|outlined (+ error). size: sm|md|lg. Optionally dismissible or toggleable.
+- [DatePicker](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/DatePicker.jsx): Date-Picker — Calendar-based date selection.
+- [Divider](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Divider.jsx): Divider — Visual separation between content groups. orientation: horizontal|vertical.
+- [FilterChip](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/NavigationControls.jsx): Navigation-Controls — FilterChip (toggle pill) + SegmentedControl (single-select radiogroup).
+- [Icon](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Icon.jsx): Icon — shared helper wrapping a Google Material Symbols glyph. Not one of the 24 DFTS components; used internally by the rest of the kit.
+- [Link](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Link.jsx): Link — Inline/standalone navigational text. size: sm|md|lg (icon gap only).
+- [Loader](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Loader.jsx): Loader — Indeterminate loading indicator. size: sm|md|lg.
+- [Menu](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Menu.jsx): Menu — Floating list of actions from a trigger button. items: [{id,label,icon,danger,disabled,onSelect}]
+- [Modal](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Modal.jsx): Modal — Blocking overlay dialog. Focus-trapped, Esc/backdrop to close, restores focus to trigger.
+- [PhoneField](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/InputFields.jsx): Input-Fields — Single-line text entry. size: sm|md|lg.
+- [ProgressLine](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/ProgressLine.jsx): Progress-Line — Determinate linear progress indicator. value: 0-100.
+- [Radio](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/FormControls.jsx): Form-Controls — Checkbox, Radio, and Switch. size: sm|md|lg.
+- [SegmentedControl](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/NavigationControls.jsx): Navigation-Controls — FilterChip (toggle pill) + SegmentedControl (single-select radiogroup).
+- [Select](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/InputFields.jsx): Input-Fields — Single-line text entry. size: sm|md|lg. / function TextField({ id, label, value, onChange, placeholder, error, helperText, size = "md", disabled…
+- [Switch](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/FormControls.jsx): Form-Controls — Checkbox, Radio, and Switch. size: sm|md|lg.
+- [Table](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Table.jsx): Table — Structured tabular data. columns: [{key,label,sortable}], rows: [{...}], selectable rows optional.
+- [Tabs](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Tabs.jsx): Tabs — Switch between sibling views. items: [{id, label, content, disabled}]
+- [TextArea](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/InputFields.jsx): Input-Fields — Single-line text entry. size: sm|md|lg. / function TextField({ id, label, value, onChange, placeholder, error, helperText, size = "md", disabled…
+- [TextField](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/InputFields.jsx): Input-Fields — Single-line text entry. size: sm|md|lg.
+- [Tile](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Tile.jsx): Tile — Compact clickable surface for navigation choices.
+- [Toast](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Toast.jsx): Toast — Transient, non-blocking, auto-dismissing notification. Rendered by ToastProvider/useToasts in demo.jsx.
+- [ToastStack](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Toast.jsx): Toast — Transient, non-blocking, auto-dismissing notification. Rendered by ToastProvider/useToasts in demo.jsx.
+- [Tooltip](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Tooltip.jsx): Tooltip — Short supplementary text on hover/focus of a trigger. placement: top|bottom.
+
+## Optional
+
+- [Styles](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/styles/tokens.css): token definitions as CSS custom properties
+- [Figma library](https://www.figma.com/design/XDwmzlvcfKlbuogKzMMM4G/Components): the design source for every component
