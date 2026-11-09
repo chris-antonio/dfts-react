@@ -2,7 +2,7 @@ import React from "react";
 import { Loader } from "../lib/index.js";
 
 export default {
-  title: "Feedback/Loader",
+  title: "Indicators/Loader",
   component: Loader,
   tags: ["autodocs"],
   argTypes: { size: { control: "inline-radio", options: ["sm", "md", "lg"] } },
