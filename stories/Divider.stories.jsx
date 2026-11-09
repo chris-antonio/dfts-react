@@ -2,7 +2,7 @@ import React from "react";
 import { Divider } from "../lib/index.js";
 
 export default {
-  title: "Data display/Divider",
+  title: "Visuals/Divider",
   component: Divider,
   tags: ["autodocs"],
   argTypes: { orientation: { control: "inline-radio", options: ["horizontal", "vertical"] } },
