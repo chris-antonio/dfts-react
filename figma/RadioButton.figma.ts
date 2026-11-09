@@ -1,6 +1,6 @@
 // url=https://www.figma.com/design/XDwmzlvcfKlbuogKzMMM4G/Components?node-id=59-129
-// source=src/components/Radio.jsx
-// component=Radio
+// source=src/components/RadioButton.jsx
+// component=RadioButton
 import figma from 'figma'
 const instance = figma.selectedInstance
 
@@ -12,7 +12,7 @@ const disabled = instance.getEnum("State", { "Default": false, "Hover": false, "
 
 export default {
   example: figma.code`
-    <Radio${showLabel ? ` label="${label}"` : ''} size="${size}" checked={${checked}}${disabled ? ' disabled' : ''} onChange={() => {}} />
+    <RadioButton${showLabel ? ` label="${label}"` : ''} size="${size}" checked={${checked}}${disabled ? ' disabled' : ''} onChange={() => {}} />
   `,
   id: 'radio',
   metadata: { nestable: true },
