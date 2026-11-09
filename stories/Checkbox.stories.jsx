@@ -2,7 +2,7 @@ import React from "react";
 import { Checkbox } from "../lib/index.js";
 
 export default {
-  title: "Forms/Checkbox",
+  title: "Data entry/Checkbox",
   component: Checkbox,
   tags: ["autodocs"],
   args: { id: "cb", label: "Accept terms" },
