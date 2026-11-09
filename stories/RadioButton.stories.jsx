@@ -2,7 +2,7 @@ import React from "react";
 import { RadioButton } from "../lib/index.js";
 
 export default {
-  title: "Forms/RadioButton",
+  title: "Data entry/RadioButton",
   component: RadioButton,
   tags: ["autodocs"],
   args: { id: "rb", name: "plan", label: "Option" },
