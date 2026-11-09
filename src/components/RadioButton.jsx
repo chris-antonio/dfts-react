@@ -1,8 +1,8 @@
 /**
- * Radio — DFTS.md §5.3 (Figma: 💠 radio-button)
+ * RadioButton — DFTS.md §5.3 (Figma: 💠 radio-button)
  * Single-choice option; group radios with a shared `name`. size: sm|md|lg.
  */
-function Radio({ id, name, label, checked, onChange, disabled, size = "md" }) {
+function RadioButton({ id, name, label, checked, onChange, disabled, size = "md" }) {
   return (
     <span className="dfts-form-control">
       <span className={`dfts-form-control__radio dfts-form-control--${size} ${checked ? "dfts-form-control__radio--checked" : ""}`}>
