@@ -2,7 +2,7 @@ import React from "react";
 import { Switch } from "../lib/index.js";
 
 export default {
-  title: "Forms/Switch",
+  title: "Data entry/Switch",
   component: Switch,
   tags: ["autodocs"],
   args: { id: "sw", label: "Notifications" },
