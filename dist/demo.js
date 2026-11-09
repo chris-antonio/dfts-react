@@ -326,7 +326,7 @@ function App() {
   }, "Toggleable (selected)"))), /*#__PURE__*/React.createElement(Section, {
     id: "form-controls",
     title: "Form Controls",
-    description: "Checkbox, Radio, and Switch — native inputs under the hood"
+    description: "Checkbox, RadioButton, and Switch — native inputs under the hood"
   }, /*#__PURE__*/React.createElement(Row, null, /*#__PURE__*/React.createElement(Checkbox, {
     id: "cb-a",
     label: "Email notifications",
@@ -353,19 +353,19 @@ function App() {
     })),
     error: true,
     errorMessage: !checkboxState.c ? "This must be checked" : undefined
-  })), /*#__PURE__*/React.createElement(Row, null, /*#__PURE__*/React.createElement(Radio, {
+  })), /*#__PURE__*/React.createElement(Row, null, /*#__PURE__*/React.createElement(RadioButton, {
     id: "plan-free",
     name: "plan",
     label: "Free",
     checked: radioValue === "plan-free",
     onChange: () => setRadioValue("plan-free")
-  }), /*#__PURE__*/React.createElement(Radio, {
+  }), /*#__PURE__*/React.createElement(RadioButton, {
     id: "plan-pro",
     name: "plan",
     label: "Pro",
     checked: radioValue === "plan-pro",
     onChange: () => setRadioValue("plan-pro")
-  }), /*#__PURE__*/React.createElement(Radio, {
+  }), /*#__PURE__*/React.createElement(RadioButton, {
     id: "plan-team",
     name: "plan",
     label: "Team",
@@ -781,18 +781,18 @@ function App() {
   })), /*#__PURE__*/React.createElement(Section, {
     id: "navigation-controls",
     title: "Navigation Controls",
-    description: "FilterChip (multi-select toggle) and SegmentedControl (single-select)"
-  }, /*#__PURE__*/React.createElement(Row, null, /*#__PURE__*/React.createElement(FilterChip, {
+    description: "Filter (multi-select toggle) and SegmentedControl (single-select)"
+  }, /*#__PURE__*/React.createElement(Row, null, /*#__PURE__*/React.createElement(Filter, {
     label: "Design",
     icon: "palette",
     active: filters.has("design"),
     onToggle: () => toggleFilter("design")
-  }), /*#__PURE__*/React.createElement(FilterChip, {
+  }), /*#__PURE__*/React.createElement(Filter, {
     label: "Engineering",
     icon: "code",
     active: filters.has("eng"),
     onToggle: () => toggleFilter("eng")
-  }), /*#__PURE__*/React.createElement(FilterChip, {
+  }), /*#__PURE__*/React.createElement(Filter, {
     label: "Research",
     icon: "search",
     active: filters.has("research"),
