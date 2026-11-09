@@ -2,7 +2,7 @@ import React from "react";
 import { BottomSheet, Button } from "../lib/index.js";
 
 export default {
-  title: "Feedback/BottomSheet",
+  title: "Containers/BottomSheet",
   component: BottomSheet,
   tags: ["autodocs"],
   parameters: { layout: "centered" },
