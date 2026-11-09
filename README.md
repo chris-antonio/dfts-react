@@ -100,6 +100,21 @@ Note: this kit's `babel.config.json`-equivalent setting is
 `import { jsx } from "react/jsx-runtime"`, which breaks the no-build, open-via-`file://`
 setup. If you add a config file, keep that option.
 
+## Storybook
+
+Every component has stories (variants, sizes, states, controls) with a light/dark theme toggle and an accessibility panel.
+Stories import the built package from `lib/`, so the scripts build it first:
+
+```bash
+npm install
+npm run storybook        # dev server on http://localhost:6006
+npm run build-storybook  # static build in storybook-static/
+```
+
+Stories live in `stories/*.stories.jsx`, config in `.storybook/`. On every push to `main`, the
+`pages.yml` workflow publishes the demo at the site root and Storybook at `/storybook/`
+(Settings → Pages → Source must be set to GitHub Actions).
+
 ## Icons
 
 Icons use Google's Material Symbols Outlined font via the shared `Icon` helper
