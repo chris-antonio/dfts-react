@@ -204,16 +204,16 @@ function App() {
             </Row>
           </Section>
 
-          <Section id="form-controls" title="Form Controls" description="Checkbox, Radio, and Switch — native inputs under the hood">
+          <Section id="form-controls" title="Form Controls" description="Checkbox, RadioButton, and Switch — native inputs under the hood">
             <Row>
               <Checkbox id="cb-a" label="Email notifications" checked={checkboxState.a} onChange={(e) => setCheckboxState((s) => ({ ...s, a: e.target.checked }))} />
               <Checkbox id="cb-b" label="SMS notifications" checked={checkboxState.b} onChange={(e) => setCheckboxState((s) => ({ ...s, b: e.target.checked }))} />
               <Checkbox id="cb-c" label="Required field" checked={checkboxState.c} onChange={(e) => setCheckboxState((s) => ({ ...s, c: e.target.checked }))} error errorMessage={!checkboxState.c ? "This must be checked" : undefined} />
             </Row>
             <Row>
-              <Radio id="plan-free" name="plan" label="Free" checked={radioValue === "plan-free"} onChange={() => setRadioValue("plan-free")} />
-              <Radio id="plan-pro" name="plan" label="Pro" checked={radioValue === "plan-pro"} onChange={() => setRadioValue("plan-pro")} />
-              <Radio id="plan-team" name="plan" label="Team" checked={radioValue === "plan-team"} onChange={() => setRadioValue("plan-team")} />
+              <RadioButton id="plan-free" name="plan" label="Free" checked={radioValue === "plan-free"} onChange={() => setRadioValue("plan-free")} />
+              <RadioButton id="plan-pro" name="plan" label="Pro" checked={radioValue === "plan-pro"} onChange={() => setRadioValue("plan-pro")} />
+              <RadioButton id="plan-team" name="plan" label="Team" checked={radioValue === "plan-team"} onChange={() => setRadioValue("plan-team")} />
             </Row>
             <Row>
               <Switch id="switch-1" label="Auto-save" checked={switchOn} onChange={(e) => setSwitchOn(e.target.checked)} />
@@ -414,11 +414,11 @@ function App() {
             <Breadcrumbs items={[{ label: "Projects", href: "#" }, { label: "DFTS", href: "#" }, { label: "Component Kit" }]} />
           </Section>
 
-          <Section id="navigation-controls" title="Navigation Controls" description="FilterChip (multi-select toggle) and SegmentedControl (single-select)">
+          <Section id="navigation-controls" title="Navigation Controls" description="Filter (multi-select toggle) and SegmentedControl (single-select)">
             <Row>
-              <FilterChip label="Design" icon="palette" active={filters.has("design")} onToggle={() => toggleFilter("design")} />
-              <FilterChip label="Engineering" icon="code" active={filters.has("eng")} onToggle={() => toggleFilter("eng")} />
-              <FilterChip label="Research" icon="search" active={filters.has("research")} onToggle={() => toggleFilter("research")} />
+              <Filter label="Design" icon="palette" active={filters.has("design")} onToggle={() => toggleFilter("design")} />
+              <Filter label="Engineering" icon="code" active={filters.has("eng")} onToggle={() => toggleFilter("eng")} />
+              <Filter label="Research" icon="search" active={filters.has("research")} onToggle={() => toggleFilter("research")} />
             </Row>
             <Row>
               <SegmentedControl
