@@ -322,9 +322,8 @@
     },
     {
       "name": "Checkbox",
-      "description": "Form-Controls — DFTS.md §5.3 Checkbox, Radio, and Switch. size: sm|md|lg.",
-      "source": "src/components/FormControls.jsx",
-      "styles": "styles/form-controls.css",
+      "description": "Checkbox — DFTS.md §5.3 (Figma: 💠 checkbox) Label, checked, error + errorMessage and disabled states. size: sm|md|lg.",
+      "source": "src/components/Checkbox.jsx",
       "props": [
         {
           "name": "id",
@@ -507,9 +506,8 @@
     },
     {
       "name": "FilterChip",
-      "description": "Navigation-Controls — DFTS.md §5.20 FilterChip (toggle pill) + SegmentedControl (single-select radiogroup).",
-      "source": "src/components/NavigationControls.jsx",
-      "styles": "styles/navigation-controls.css",
+      "description": "FilterChip — DFTS.md §5.20 (Figma: 💠 filter) Toggle pill with optional leading icon; `active` sets aria-pressed.",
+      "source": "src/components/FilterChip.jsx",
       "props": [
         {
           "name": "label",
@@ -727,9 +725,8 @@
     },
     {
       "name": "PhoneField",
-      "description": "Input-Fields — DFTS.md §5.4 Single-line text entry. size: sm|md|lg.",
-      "source": "src/components/InputFields.jsx",
-      "styles": "styles/input-fields.css",
+      "description": "PhoneField (Figma: 💠 phone-field) A country-code Select composed with a text input. size: sm|md|lg. value: { code, number }. countries: [{ value: \"+33\", label: \"🇫🇷 +33\" }].",
+      "source": "src/components/PhoneField.jsx",
       "props": [
         {
           "name": "id",
@@ -827,9 +824,8 @@
     },
     {
       "name": "Radio",
-      "description": "Form-Controls — DFTS.md §5.3 Checkbox, Radio, and Switch. size: sm|md|lg.",
-      "source": "src/components/FormControls.jsx",
-      "styles": "styles/form-controls.css",
+      "description": "Radio — DFTS.md §5.3 (Figma: 💠 radio-button) Single-choice option; group radios with a shared `name`. size: sm|md|lg.",
+      "source": "src/components/Radio.jsx",
       "props": [
         {
           "name": "id",
@@ -876,9 +872,8 @@
     },
     {
       "name": "SegmentedControl",
-      "description": "Navigation-Controls — DFTS.md §5.20 FilterChip (toggle pill) + SegmentedControl (single-select radiogroup).",
-      "source": "src/components/NavigationControls.jsx",
-      "styles": "styles/navigation-controls.css",
+      "description": "SegmentedControl — DFTS.md §5.20 (Figma: 💠 segmented-control) Single-select radiogroup with arrow-key navigation.",
+      "source": "src/components/SegmentedControl.jsx",
       "props": [
         {
           "name": "segments",
@@ -902,9 +897,8 @@
     },
     {
       "name": "Select",
-      "description": "Input-Fields — DFTS.md §5.4 Single-line text entry. size: sm|md|lg. / function TextField({ id, label, value, onChange, placeholder, error, helperText, size = \"md\", disabled = false, type = \"text\", leadingIcon, ...props }) { const describedBy = error || helperText ? `${id}-help` : undefined; return ( <div className=\"dfts-input-field\"> {label && <label htmlFor={id} className=\"dfts-input-field__label\">{label}</label>} <div className={`dfts-input-field__control-wrap dfts-input-field--${size} ${error ? \"dfts-input-field--error\" : \"\"} ${disabled ? \"dfts-input-field--disabled\" : \"\"}`}> {leadingIcon && <Icon name={leadingIcon} size={16} className=\"dfts-input-field__icon\" />} <input id={id} type={type} value={value} onChange={onChange} placeholder={placeholder} disabled={disabled} aria-invalid={error ? \"true\" : undefined} aria-describedby={describedBy} className=\"dfts-input-field__control\" {...props} /> </div> {(error || helperText) && ( <span id={describedBy} className={error ? \"dfts-input-field__helper--error\" : \"dfts-input-field__helper\"}> {error || helperText} </span> )} </div> ); } /** Input-Fields — TextArea (Figma: 💠 text-area) Multi-line text entry. Same anatomy as TextField: label → box → helper/error text. / function TextArea({ id, label, value, onChange, placeholder, error, helperText, size = \"md\", disabled = false, rows = 1, ...props }) { const describedBy = error || helperText ? `${id}-help` : undefined; return ( <div className=\"dfts-input-field\"> {label && <label htmlFor={id} className=\"dfts-input-field__label\">{label}</label>} <div className={`dfts-input-field__control-wrap dfts-input-field__control-wrap--multiline dfts-input-field--${size} ${error ? \"dfts-input-field--error\" : \"\"} ${disabled ? \"dfts-input-field--disabled\" : \"\"}`}> <textarea id={id} value={value} onChange={onChange} placeholder={placeholder} disabled={disabled} rows={rows} aria-invalid={error ? \"true\" : undefined} aria-describedby={describedBy} className=\"dfts-input-field__control dfts-input-field__control--textarea\" {...props} /> </div> {(error || helperText) && ( <span id={describedBy} className={error ? \"dfts-input-field__helper--error\" : \"dfts-input-field__helper\"}> {error || helperText} </span> )} </div> ); } /** Input-Fields — Select (Figma: 💠 select) Custom listbox. mode: single (value is a string) | multiple (value is an array). options: [{ value, label }] — plain strings are also accepted. size: sm|md|lg. Keyboard: Enter/Space/ArrowDown open, Arrow keys move, Enter selects, Esc closes.",
-      "source": "src/components/InputFields.jsx",
-      "styles": "styles/input-fields.css",
+      "description": "Select (Figma: 💠 select) Custom listbox. mode: single (value is a string) | multiple (value is an array). options: [{ value, label }] — plain strings are also accepted. size: sm|md|lg. Keyboard: Enter/Space/ArrowDown open, Arrow keys move, Enter selects, Esc closes.",
+      "source": "src/components/Select.jsx",
       "props": [
         {
           "name": "id",
@@ -980,9 +974,8 @@
     },
     {
       "name": "Switch",
-      "description": "Form-Controls — DFTS.md §5.3 Checkbox, Radio, and Switch. size: sm|md|lg.",
-      "source": "src/components/FormControls.jsx",
-      "styles": "styles/form-controls.css",
+      "description": "Switch — DFTS.md §5.3 (Figma: 💠 switch) On/off toggle with label. size: sm|md|lg.",
+      "source": "src/components/Switch.jsx",
       "props": [
         {
           "name": "id",
@@ -1073,9 +1066,8 @@
     },
     {
       "name": "TextArea",
-      "description": "Input-Fields — DFTS.md §5.4 Single-line text entry. size: sm|md|lg. / function TextField({ id, label, value, onChange, placeholder, error, helperText, size = \"md\", disabled = false, type = \"text\", leadingIcon, ...props }) { const describedBy = error || helperText ? `${id}-help` : undefined; return ( <div className=\"dfts-input-field\"> {label && <label htmlFor={id} className=\"dfts-input-field__label\">{label}</label>} <div className={`dfts-input-field__control-wrap dfts-input-field--${size} ${error ? \"dfts-input-field--error\" : \"\"} ${disabled ? \"dfts-input-field--disabled\" : \"\"}`}> {leadingIcon && <Icon name={leadingIcon} size={16} className=\"dfts-input-field__icon\" />} <input id={id} type={type} value={value} onChange={onChange} placeholder={placeholder} disabled={disabled} aria-invalid={error ? \"true\" : undefined} aria-describedby={describedBy} className=\"dfts-input-field__control\" {...props} /> </div> {(error || helperText) && ( <span id={describedBy} className={error ? \"dfts-input-field__helper--error\" : \"dfts-input-field__helper\"}> {error || helperText} </span> )} </div> ); } /** Input-Fields — TextArea (Figma: 💠 text-area) Multi-line text entry. Same anatomy as TextField: label → box → helper/error text.",
-      "source": "src/components/InputFields.jsx",
-      "styles": "styles/input-fields.css",
+      "description": "TextArea (Figma: 💠 text-area) Multi-line text entry. Same anatomy as TextField: label → box → helper/error text.",
+      "source": "src/components/TextArea.jsx",
       "props": [
         {
           "name": "id",
@@ -1110,12 +1102,7 @@
           "name": "size",
           "required": false,
           "default": "md",
-          "options": [
-            "sm",
-            "md",
-            "lg"
-          ],
-          "type": "enum"
+          "type": "string"
         },
         {
           "name": "disabled",
@@ -1138,9 +1125,8 @@
     },
     {
       "name": "TextField",
-      "description": "Input-Fields — DFTS.md §5.4 Single-line text entry. size: sm|md|lg.",
-      "source": "src/components/InputFields.jsx",
-      "styles": "styles/input-fields.css",
+      "description": "TextField — DFTS.md §5.4 (Figma: 💠 text-field) Single-line text entry. size: sm|md|lg.",
+      "source": "src/components/TextField.jsx",
       "props": [
         {
           "name": "id",
