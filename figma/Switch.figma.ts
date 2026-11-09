@@ -1,5 +1,5 @@
 // url=https://www.figma.com/design/XDwmzlvcfKlbuogKzMMM4G/Components?node-id=59-275
-// source=src/components/FormControls.jsx
+// source=src/components/Switch.jsx
 // component=Switch
 import figma from 'figma'
 const instance = figma.selectedInstance

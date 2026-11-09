@@ -1,6 +1,6 @@
 # DFTS React Component Kit
 
-A React implementation of all 24 components documented in `DFTS.md` (plus the `TextArea`, `Select` and `PhoneField` input variants from the Figma Components library, in `InputFields.jsx`), built against
+A React implementation of all 24 components documented in `DFTS.md` (plus the `TextArea`, `Select` and `PhoneField` input variants from the Figma Components library, each in its own file), built against
 the tokens in `DFTS-tokens.md`, plus an interactive demo page with a light/dark
 theme switch.
 
@@ -76,7 +76,7 @@ components share the global scope. To use one in a real bundler-based project
 2. Add `export` to the component function(s).
 3. Add `import` statements for anything the file references from another
    component (e.g. `Chip.jsx` doesn't need anything, but `Table.jsx` uses
-   `Checkbox` from `FormControls.jsx`, and most components use the shared
+   `Checkbox` from `Checkbox.jsx`, and most components use the shared
    `Icon` helper from `Icon.jsx`).
 4. Import `tokens.css` and `base.css` once at your app root, then import each
    component's CSS file alongside its `.jsx` file.

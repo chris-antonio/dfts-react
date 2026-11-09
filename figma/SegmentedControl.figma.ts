@@ -1,5 +1,5 @@
 // url=https://www.figma.com/design/XDwmzlvcfKlbuogKzMMM4G/Components?node-id=162-6
-// source=src/components/NavigationControls.jsx
+// source=src/components/SegmentedControl.jsx
 // component=SegmentedControl
 import figma from 'figma'
 const instance = figma.selectedInstance

@@ -22,26 +22,26 @@ Import components from the package and load `styles.css` once at the app root. S
 - [Button](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Button.jsx): Button — Primary call-to-action element. variant: primary|secondary|ghost|destructive. size: sm|md|lg.
 - [Card](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Card.jsx): Card — General-purpose content container.
 - [Carousel](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Carousel.jsx): Carousel — Horizontally paged content. slides: [{id, content}]
-- [Checkbox](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/FormControls.jsx): Form-Controls — Checkbox, Radio, and Switch. size: sm|md|lg.
+- [Checkbox](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Checkbox.jsx): Checkbox — (Figma: 💠 checkbox) Label, checked, error + errorMessage and disabled states. size: sm|md|lg.
 - [Chip](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Chip.jsx): Chip — variant: filled|outlined (+ error). size: sm|md|lg. Optionally dismissible or toggleable.
 - [DatePicker](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/DatePicker.jsx): Date-Picker — Calendar-based date selection.
 - [Divider](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Divider.jsx): Divider — Visual separation between content groups. orientation: horizontal|vertical.
-- [FilterChip](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/NavigationControls.jsx): Navigation-Controls — FilterChip (toggle pill) + SegmentedControl (single-select radiogroup).
+- [FilterChip](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/FilterChip.jsx): FilterChip — (Figma: 💠 filter) Toggle pill with optional leading icon; `active` sets aria-pressed.
 - [Icon](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Icon.jsx): Icon — shared helper wrapping a Google Material Symbols glyph. Not one of the 24 DFTS components; used internally by the rest of the kit.
 - [Link](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Link.jsx): Link — Inline/standalone navigational text. size: sm|md|lg (icon gap only).
 - [Loader](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Loader.jsx): Loader — Indeterminate loading indicator. size: sm|md|lg.
 - [Menu](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Menu.jsx): Menu — Floating list of actions from a trigger button. items: [{id,label,icon,danger,disabled,onSelect}]
 - [Modal](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Modal.jsx): Modal — Blocking overlay dialog. Focus-trapped, Esc/backdrop to close, restores focus to trigger.
-- [PhoneField](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/InputFields.jsx): Input-Fields — Single-line text entry. size: sm|md|lg.
+- [PhoneField](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/PhoneField.jsx): PhoneField (Figma: 💠 phone-field) A country-code Select composed with a text input. size: sm|md|lg. value: { code, number }.
 - [ProgressLine](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/ProgressLine.jsx): Progress-Line — Determinate linear progress indicator. value: 0-100.
-- [Radio](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/FormControls.jsx): Form-Controls — Checkbox, Radio, and Switch. size: sm|md|lg.
-- [SegmentedControl](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/NavigationControls.jsx): Navigation-Controls — FilterChip (toggle pill) + SegmentedControl (single-select radiogroup).
-- [Select](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/InputFields.jsx): Input-Fields — Single-line text entry. size: sm|md|lg. / function TextField({ id, label, value, onChange, placeholder, error, helperText, size = "md", disabled…
-- [Switch](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/FormControls.jsx): Form-Controls — Checkbox, Radio, and Switch. size: sm|md|lg.
+- [Radio](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Radio.jsx): Radio — (Figma: 💠 radio-button) Single-choice option; group radios with a shared `name`. size: sm|md|lg.
+- [SegmentedControl](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/SegmentedControl.jsx): SegmentedControl — (Figma: 💠 segmented-control) Single-select radiogroup with arrow-key navigation.
+- [Select](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Select.jsx): Select (Figma: 💠 select) Custom listbox. mode: single (value is a string) | multiple (value is an array).
+- [Switch](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Switch.jsx): Switch — (Figma: 💠 switch) On/off toggle with label. size: sm|md|lg.
 - [Table](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Table.jsx): Table — Structured tabular data. columns: [{key,label,sortable}], rows: [{...}], selectable rows optional.
 - [Tabs](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Tabs.jsx): Tabs — Switch between sibling views. items: [{id, label, content, disabled}]
-- [TextArea](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/InputFields.jsx): Input-Fields — Single-line text entry. size: sm|md|lg. / function TextField({ id, label, value, onChange, placeholder, error, helperText, size = "md", disabled…
-- [TextField](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/InputFields.jsx): Input-Fields — Single-line text entry. size: sm|md|lg.
+- [TextArea](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/TextArea.jsx): TextArea (Figma: 💠 text-area) Multi-line text entry. Same anatomy as TextField: label → box → helper/error text.
+- [TextField](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/TextField.jsx): TextField — (Figma: 💠 text-field) Single-line text entry. size: sm|md|lg.
 - [Tile](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Tile.jsx): Tile — Compact clickable surface for navigation choices.
 - [Toast](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Toast.jsx): Toast — Transient, non-blocking, auto-dismissing notification. Rendered by ToastProvider/useToasts in demo.jsx.
 - [ToastStack](https://raw.githubusercontent.com/chris-antonio/dfts-react/main/src/components/Toast.jsx): Toast — Transient, non-blocking, auto-dismissing notification. Rendered by ToastProvider/useToasts in demo.jsx.

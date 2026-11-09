@@ -1,25 +1,7 @@
 /**
- * Navigation-Controls — DFTS.md §5.20
- * FilterChip (toggle pill) + SegmentedControl (single-select radiogroup).
+ * SegmentedControl — DFTS.md §5.20 (Figma: 💠 segmented-control)
+ * Single-select radiogroup with arrow-key navigation.
  */
-function FilterChip({
-  label,
-  icon,
-  active,
-  onToggle,
-  disabled
-}) {
-  return /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    className: `dfts-filter-chip ${active ? "dfts-filter-chip--active" : ""}`,
-    "aria-pressed": active,
-    disabled: disabled,
-    onClick: onToggle
-  }, icon && /*#__PURE__*/React.createElement(Icon, {
-    name: icon,
-    size: 14
-  }), label);
-}
 function SegmentedControl({
   segments,
   value,

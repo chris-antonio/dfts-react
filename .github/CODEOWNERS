@@ -59,19 +59,43 @@
 /styles/divider.css                             @chris-antonio
 /dist/components/Divider.js                     @chris-antonio
 
-# FormControls
-/src/components/FormControls.jsx                @chris-antonio
+# Checkbox
+/src/components/Checkbox.jsx                    @chris-antonio
+/dist/components/Checkbox.js                    @chris-antonio
+
+# Radio
+/src/components/Radio.jsx                       @chris-antonio
+/dist/components/Radio.js                       @chris-antonio
+
+# Switch
+/src/components/Switch.jsx                      @chris-antonio
+/dist/components/Switch.js                      @chris-antonio
+
+# FormControls styles (shared by Checkbox, Radio, Switch)
 /styles/form-controls.css                       @chris-antonio
-/dist/components/FormControls.js                @chris-antonio
 
 # Icon
 /src/components/Icon.jsx                        @chris-antonio
 /dist/components/Icon.js                        @chris-antonio
 
-# InputFields
-/src/components/InputFields.jsx                 @chris-antonio
+# TextField
+/src/components/TextField.jsx                   @chris-antonio
+/dist/components/TextField.js                   @chris-antonio
+
+# TextArea
+/src/components/TextArea.jsx                    @chris-antonio
+/dist/components/TextArea.js                    @chris-antonio
+
+# Select
+/src/components/Select.jsx                      @chris-antonio
+/dist/components/Select.js                      @chris-antonio
+
+# PhoneField
+/src/components/PhoneField.jsx                  @chris-antonio
+/dist/components/PhoneField.js                  @chris-antonio
+
+# InputFields styles (shared by TextField, TextArea, Select, PhoneField)
 /styles/input-fields.css                        @chris-antonio
-/dist/components/InputFields.js                 @chris-antonio
 
 # Link
 /src/components/Link.jsx                        @chris-antonio
@@ -93,10 +117,16 @@
 /styles/modal.css                               @chris-antonio
 /dist/components/Modal.js                       @chris-antonio
 
-# NavigationControls
-/src/components/NavigationControls.jsx          @chris-antonio
+# FilterChip
+/src/components/FilterChip.jsx                  @chris-antonio
+/dist/components/FilterChip.js                  @chris-antonio
+
+# SegmentedControl
+/src/components/SegmentedControl.jsx            @chris-antonio
+/dist/components/SegmentedControl.js            @chris-antonio
+
+# NavigationControls styles (shared by FilterChip, SegmentedControl)
 /styles/navigation-controls.css                 @chris-antonio
-/dist/components/NavigationControls.js          @chris-antonio
 
 # ProgressLine
 /src/components/ProgressLine.jsx                @chris-antonio

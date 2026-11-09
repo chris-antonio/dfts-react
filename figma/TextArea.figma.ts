@@ -1,5 +1,5 @@
 // url=https://www.figma.com/design/XDwmzlvcfKlbuogKzMMM4G/Components?node-id=60-105
-// source=src/components/InputFields.jsx
+// source=src/components/TextArea.jsx
 // component=TextArea
 import figma from 'figma'
 const instance = figma.selectedInstance

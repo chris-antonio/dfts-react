@@ -1,5 +1,5 @@
 // url=https://www.figma.com/design/XDwmzlvcfKlbuogKzMMM4G/Components?node-id=59-129
-// source=src/components/FormControls.jsx
+// source=src/components/Radio.jsx
 // component=Radio
 import figma from 'figma'
 const instance = figma.selectedInstance
