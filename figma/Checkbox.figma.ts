@@ -1,5 +1,5 @@
 // url=https://www.figma.com/design/XDwmzlvcfKlbuogKzMMM4G/Components?node-id=58-275
-// source=src/components/FormControls.jsx
+// source=src/components/Checkbox.jsx
 // component=Checkbox
 import figma from 'figma'
 const instance = figma.selectedInstance
