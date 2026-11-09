@@ -1,5 +1,5 @@
 // url=https://www.figma.com/design/XDwmzlvcfKlbuogKzMMM4G/Components?node-id=61-13
-// source=src/components/NavigationControls.jsx
+// source=src/components/FilterChip.jsx
 // component=FilterChip
 import figma from 'figma'
 const instance = figma.selectedInstance
