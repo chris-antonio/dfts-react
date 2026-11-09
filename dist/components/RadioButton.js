@@ -1,8 +1,8 @@
 /**
- * Radio — DFTS.md §5.3 (Figma: 💠 radio-button)
+ * RadioButton — DFTS.md §5.3 (Figma: 💠 radio-button)
  * Single-choice option; group radios with a shared `name`. size: sm|md|lg.
  */
-function Radio({
+function RadioButton({
   id,
   name,
   label,
