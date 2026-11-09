@@ -2,7 +2,7 @@ import React from "react";
 import { Tooltip, Button } from "../lib/index.js";
 
 export default {
-  title: "Feedback/Tooltip",
+  title: "Indicators/Tooltip",
   component: Tooltip,
   tags: ["autodocs"],
   args: { label: "Duplicate this file" },
