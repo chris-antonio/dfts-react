@@ -2,7 +2,7 @@ import React from "react";
 import { TextField } from "../lib/index.js";
 
 export default {
-  title: "Forms/TextField",
+  title: "Data entry/TextField",
   component: TextField,
   tags: ["autodocs"],
   args: { id: "tf", label: "Full name", placeholder: "Ada Lovelace" },
