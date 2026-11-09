@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "../lib/index.js";
 
 export default {
-  title: "Actions/Link",
+  title: "Navigation/Link",
   component: Link,
   tags: ["autodocs"],
   args: { children: "Read the docs", href: "#" },
