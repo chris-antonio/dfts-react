@@ -20,10 +20,21 @@
     "prepare": "npm run build",
     "test": "node scripts/smoke-test.mjs",
     "docs": "node scripts/build-docs.mjs",
-    "mcp": "node mcp/server.mjs"
+    "mcp": "node mcp/server.mjs",
+    "storybook": "npm run build && storybook dev -p 6006",
+    "build-storybook": "npm run build && storybook build -o storybook-static"
   },
   "peerDependencies": { "react": ">=18", "react-dom": ">=18" },
-  "devDependencies": { "esbuild": "^0.24.0", "react": "^18.3.1", "react-dom": "^18.3.1" },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.6.6",
+    "@storybook/addon-docs": "^10.6.6",
+    "@storybook/react-vite": "^10.6.6",
+    "esbuild": "^0.24.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "storybook": "^10.6.6",
+    "vite": "^7.3.8"
+  },
   "repository": { "type": "git", "url": "git+https://github.com/chris-antonio/dfts-react.git" },
   "publishConfig": { "access": "public" }
 }
