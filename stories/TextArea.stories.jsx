@@ -2,7 +2,7 @@ import React from "react";
 import { TextArea } from "../lib/index.js";
 
 export default {
-  title: "Forms/TextArea",
+  title: "Data entry/TextArea",
   component: TextArea,
   tags: ["autodocs"],
   args: { id: "ta", label: "Message", placeholder: "Write something…" },
