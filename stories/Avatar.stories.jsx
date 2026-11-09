@@ -2,7 +2,7 @@ import React from "react";
 import { Avatar } from "../lib/index.js";
 
 export default {
-  title: "Data display/Avatar",
+  title: "Visuals/Avatar",
   component: Avatar,
   tags: ["autodocs"],
   args: { name: "Amara Chen" },
