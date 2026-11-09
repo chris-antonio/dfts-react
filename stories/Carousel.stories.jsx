@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "../lib/index.js";
 
 export default {
-  title: "Data display/Carousel",
+  title: "Containers/Carousel",
   component: Carousel,
   tags: ["autodocs"],
   args: {

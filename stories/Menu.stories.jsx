@@ -2,7 +2,7 @@ import React from "react";
 import { Menu, Button } from "../lib/index.js";
 
 export default {
-  title: "Actions/Menu",
+  title: "Navigation/Menu",
   component: Menu,
   tags: ["autodocs"],
   parameters: { layout: "centered" },

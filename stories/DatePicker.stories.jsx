@@ -2,7 +2,7 @@ import React from "react";
 import { DatePicker } from "../lib/index.js";
 
 export default {
-  title: "Forms/DatePicker",
+  title: "Data entry/DatePicker",
   component: DatePicker,
   tags: ["autodocs"],
 };

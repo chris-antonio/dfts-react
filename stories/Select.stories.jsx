@@ -2,7 +2,7 @@ import React from "react";
 import { Select } from "../lib/index.js";
 
 export default {
-  title: "Forms/Select",
+  title: "Data entry/Select",
   component: Select,
   tags: ["autodocs"],
   args: {

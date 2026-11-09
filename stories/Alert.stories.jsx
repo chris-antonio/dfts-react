@@ -2,7 +2,7 @@ import React from "react";
 import { Alert } from "../lib/index.js";
 
 export default {
-  title: "Feedback/Alert",
+  title: "Indicators/Alert",
   component: Alert,
   tags: ["autodocs"],
   args: { title: "Heads up", children: "Something you should know about." },

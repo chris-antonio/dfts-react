@@ -2,7 +2,7 @@ import React from "react";
 import { ProgressLine } from "../lib/index.js";
 
 export default {
-  title: "Feedback/ProgressLine",
+  title: "Indicators/ProgressLine",
   component: ProgressLine,
   tags: ["autodocs"],
   args: { value: 60, label: "Upload", showLabel: true },

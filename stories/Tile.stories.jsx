@@ -2,7 +2,7 @@ import React from "react";
 import { Tile } from "../lib/index.js";
 
 export default {
-  title: "Data display/Tile",
+  title: "Actions/Tile",
   component: Tile,
   tags: ["autodocs"],
   args: { icon: "dashboard", title: "Dashboard", description: "Overview & stats", onClick: () => {} },

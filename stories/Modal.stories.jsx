@@ -2,7 +2,7 @@ import React from "react";
 import { Modal, Button } from "../lib/index.js";
 
 export default {
-  title: "Feedback/Modal",
+  title: "Containers/Modal",
   component: Modal,
   tags: ["autodocs"],
   parameters: { layout: "centered" },

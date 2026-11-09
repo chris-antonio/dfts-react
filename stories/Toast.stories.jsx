@@ -2,7 +2,7 @@ import React from "react";
 import { Toast, ToastStack, Button } from "../lib/index.js";
 
 export default {
-  title: "Feedback/Toast",
+  title: "Indicators/Toast",
   component: Toast,
   tags: ["autodocs"],
   args: { children: "Export complete" },
