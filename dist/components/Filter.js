@@ -1,8 +1,8 @@
 /**
- * FilterChip — DFTS.md §5.20 (Figma: 💠 filter)
+ * Filter — DFTS.md §5.20 (Figma: 💠 filter)
  * Toggle pill with optional leading icon; `active` sets aria-pressed.
  */
-function FilterChip({
+function Filter({
   label,
   icon,
   active,
