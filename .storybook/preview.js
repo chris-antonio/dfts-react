@@ -28,5 +28,6 @@ export const decorators = [
 export const parameters = {
   layout: "fullscreen",
   controls: { expanded: true },
-  options: { storySort: { order: ["Actions", "Forms", "Feedback", "Data display", "Navigation"] } },
+  // Same categories as the pages in the Figma "Components" file
+  options: { storySort: { order: ["Actions", "Containers", "Data entry", "Indicators", "Navigation", "Visuals"] } },
 };
