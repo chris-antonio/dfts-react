@@ -2,7 +2,7 @@ import React from "react";
 import { Card, ProgressLine } from "../lib/index.js";
 
 export default {
-  title: "Data display/Card",
+  title: "Containers/Card",
   component: Card,
   tags: ["autodocs"],
   args: { title: "Website redesign", description: "New marketing site on the DFTS kit." },
