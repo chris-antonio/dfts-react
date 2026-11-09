@@ -2,7 +2,7 @@ import React from "react";
 import { PhoneField } from "../lib/index.js";
 
 export default {
-  title: "Forms/PhoneField",
+  title: "Data entry/PhoneField",
   component: PhoneField,
   tags: ["autodocs"],
   args: { id: "ph" },
