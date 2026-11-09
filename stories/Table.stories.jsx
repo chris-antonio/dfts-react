@@ -2,7 +2,7 @@ import React from "react";
 import { Table } from "../lib/index.js";
 
 export default {
-  title: "Data display/Table",
+  title: "Containers/Table",
   component: Table,
   tags: ["autodocs"],
   args: {
