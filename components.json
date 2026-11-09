@@ -505,9 +505,9 @@
       }
     },
     {
-      "name": "FilterChip",
-      "description": "FilterChip — DFTS.md §5.20 (Figma: 💠 filter) Toggle pill with optional leading icon; `active` sets aria-pressed.",
-      "source": "src/components/FilterChip.jsx",
+      "name": "Filter",
+      "description": "Filter — DFTS.md §5.20 (Figma: 💠 filter) Toggle pill with optional leading icon; `active` sets aria-pressed.",
+      "source": "src/components/Filter.jsx",
       "props": [
         {
           "name": "label",
@@ -823,9 +823,9 @@
       }
     },
     {
-      "name": "Radio",
-      "description": "Radio — DFTS.md §5.3 (Figma: 💠 radio-button) Single-choice option; group radios with a shared `name`. size: sm|md|lg.",
-      "source": "src/components/Radio.jsx",
+      "name": "RadioButton",
+      "description": "RadioButton — DFTS.md §5.3 (Figma: 💠 radio-button) Single-choice option; group radios with a shared `name`. size: sm|md|lg.",
+      "source": "src/components/RadioButton.jsx",
       "props": [
         {
           "name": "id",

@@ -5,9 +5,9 @@
 // Figma component-set node ids in the "Components" library (file XDwmzlvcfKlbuogKzMMM4G).
 export const FIGMA_FILE = "XDwmzlvcfKlbuogKzMMM4G";
 export const FIGMA_NODES = {
-  Button: "56:111", FilterChip: "61:13", SegmentedControl: "162:6", Tile: "65:63", Accordion: "69:47",
+  Button: "56:111", Filter: "61:13", SegmentedControl: "162:6", Tile: "65:63", Accordion: "69:47",
   BottomSheet: "77:22", Card: "68:27", Carousel: "78:3", Modal: "74:45", Table: "165:251", Checkbox: "58:275",
-  DatePicker: "76:3", PhoneField: "101:169", Radio: "59:129", Select: "60:197", Switch: "59:275",
+  DatePicker: "76:3", PhoneField: "101:169", RadioButton: "59:129", Select: "60:197", Switch: "59:275",
   TextArea: "60:105", TextField: "60:78", Alert: "61:80", Chip: "58:75", Loader: "61:141",
   ProgressLine: "61:163", Toast: "61:97", Tooltip: "61:115", Breadcrumbs: "165:204", Link: "59:313",
   Menu: "165:198", Tabs: "165:177", Avatar: "59:345", Divider: "141:2",

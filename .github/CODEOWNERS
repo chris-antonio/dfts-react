@@ -63,15 +63,15 @@
 /src/components/Checkbox.jsx                    @chris-antonio
 /dist/components/Checkbox.js                    @chris-antonio
 
-# Radio
-/src/components/Radio.jsx                       @chris-antonio
-/dist/components/Radio.js                       @chris-antonio
+# RadioButton
+/src/components/RadioButton.jsx                 @chris-antonio
+/dist/components/RadioButton.js                 @chris-antonio
 
 # Switch
 /src/components/Switch.jsx                      @chris-antonio
 /dist/components/Switch.js                      @chris-antonio
 
-# FormControls styles (shared by Checkbox, Radio, Switch)
+# FormControls styles (shared by Checkbox, RadioButton, Switch)
 /styles/form-controls.css                       @chris-antonio
 
 # Icon
@@ -117,15 +117,15 @@
 /styles/modal.css                               @chris-antonio
 /dist/components/Modal.js                       @chris-antonio
 
-# FilterChip
-/src/components/FilterChip.jsx                  @chris-antonio
-/dist/components/FilterChip.js                  @chris-antonio
+# Filter
+/src/components/Filter.jsx                      @chris-antonio
+/dist/components/Filter.js                      @chris-antonio
 
 # SegmentedControl
 /src/components/SegmentedControl.jsx            @chris-antonio
 /dist/components/SegmentedControl.js            @chris-antonio
 
-# NavigationControls styles (shared by FilterChip, SegmentedControl)
+# NavigationControls styles (shared by Filter, SegmentedControl)
 /styles/navigation-controls.css                 @chris-antonio
 
 # ProgressLine
