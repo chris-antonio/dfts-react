@@ -2,7 +2,7 @@ import React from "react";
 import { Icon } from "../lib/index.js";
 
 export default {
-  title: "Data display/Icon",
+  title: "Visuals/Icon",
   component: Icon,
   tags: ["autodocs"],
   args: { name: "home", size: 24 },
