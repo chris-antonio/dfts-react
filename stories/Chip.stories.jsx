@@ -2,7 +2,7 @@ import React from "react";
 import { Chip, Button } from "../lib/index.js";
 
 export default {
-  title: "Actions/Chip",
+  title: "Indicators/Chip",
   component: Chip,
   tags: ["autodocs"],
   args: { children: "Chip" },
