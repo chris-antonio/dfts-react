@@ -1,6 +1,6 @@
 // url=https://www.figma.com/design/XDwmzlvcfKlbuogKzMMM4G/Components?node-id=61-13
-// source=src/components/FilterChip.jsx
-// component=FilterChip
+// source=src/components/Filter.jsx
+// component=Filter
 import figma from 'figma'
 const instance = figma.selectedInstance
 
@@ -10,7 +10,7 @@ const disabled = instance.getEnum("State", { "Default": false, "Hover": false, "
 
 export default {
   example: figma.code`
-    <FilterChip label="${label}"${active ? ' active' : ''}${disabled ? ' disabled' : ''} onToggle={() => {}} />
+    <Filter label="${label}"${active ? ' active' : ''}${disabled ? ' disabled' : ''} onToggle={() => {}} />
   `,
   id: 'filter-chip',
   metadata: { nestable: true },
