@@ -2,7 +2,7 @@ import React from "react";
 import { Accordion } from "../lib/index.js";
 
 export default {
-  title: "Data display/Accordion",
+  title: "Containers/Accordion",
   component: Accordion,
   tags: ["autodocs"],
   args: {
